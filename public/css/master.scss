@@ -193,7 +193,7 @@ a {
 
 #footer {
   width:844px;
-  margin:40px auto 0;
+  margin:80px auto 0;
   
   #powered {
     float:left;
@@ -216,10 +216,15 @@ a {
   margin:30px auto;
   text-align:center;
   .next, .prev { 
-    background:#222;
+    background:#539a2c;
+    box-shadow:0 1px 1px #affa85 inset;
+    border:1px solid #18310b;
+    text-shadow:0 1px 1px #111;
+    font-size:13px;
     border-radius:4px;
     padding:4px 8px;
     color:#fff;
     margin:0 12px;
+    text-transform:uppercase;
   }
 }
