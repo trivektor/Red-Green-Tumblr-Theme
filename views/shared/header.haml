@@ -1,0 +1,17 @@
+#thin_strip
+
+%header#header
+  .inner
+    %ul#social_networks
+      %li 
+        %a{:href => "#"}
+          = image_tag "images/twitter_social.png", :id => "twitter"
+      %li
+        %a{:href => "#"}
+          = image_tag "images/facebook_social.png", :id => "facebook"
+      %li
+        %a{:href => "#"}
+          = image_tag "images/github_social.png", :id => "github"
+          
+    #search_box
+      %input{:type => :text, :id => "search", :placeholder => "Looking for something?"}

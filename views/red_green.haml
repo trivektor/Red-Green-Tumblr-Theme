@@ -1,0 +1,51 @@
+!!!
+%html
+  %head
+    %title= @title_for_layout
+    = stylesheet_link_tag "css/master.css"
+  %body
+    = haml :"shared/header"
+    
+    = haml :"shared/title"
+    
+    #main_content
+      #entries_column
+        .top
+        .middle
+          
+          - 7.downto(1) do |i|
+            .entry
+              .calendar
+                .month Jan
+                .day= "0#{i}"
+              .content
+                .title Simple programming rules I like
+                %p It was while reading this post that I found a comment by Patrick Balleux which I really like and want to share with everyone
+                %p "Good coding style is often limited by the language and the time allowed to solve the problem.
+                %p Bad code is often generated with short dead lines and by dreamers. When I say “dreamers”, I’m thinking about those trying to prove the world that they can create an amazing new framework where their code will solve everything.
+                %p I follow those simple rules:
+                %p- make it work, then make it clean, then make it fast
+              
+                %p
+                  !- if it looks cool, this is a bad idea
+                  %br
+                  !- if it does everything, it will do nothing
+                  %br
+                  !- if it need comments, it’s badly coded
+
+                %p Code should be easy to understand. Would you read a book if you were required to use a dictionary to understand each line? Same applies to code.
+
+                %p The quality of code often represents the understanding of the issue to solve. The first step if to have a clean design, well documented. No coding should happen if you cannot understand the requirements first.
+
+                %p My 2 cents”
+
+                %p Patrick Balleux
+              
+              
+        .bottom
+        
+      #profile_picture_column
+        = image_tag "images/me.jpg", :id => :profile_picture
+        %span#askme Ask me anything
+        
+      .clearfloat

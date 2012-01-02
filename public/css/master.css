@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Georgia;
+  font-size: 12px;
+  background: url(/images/bg.jpg) top center repeat-y;
+  padding-bottom: 120px; }
+
+ul {
+  list-style: none; }
+
+a {
+  outline-style: none;
+  text-decoration: none; }
+
+.clearfloat {
+  clear: both; }
+
+#thin_strip {
+  background: url(/images/thin_strip.png) repeat-x;
+  height: 2px; }
+
+#header {
+  background: url(/images/header_bg.png) repeat-x;
+  height: 60px; }
+  #header .inner {
+    width: 844px;
+    margin: 0 auto;
+    padding-top: 9px;
+    overflow: hidden; }
+
+#social_networks {
+  float: left;
+  width: 400px;
+  margin-top: 9px;
+  margin-left: 13px; }
+  #social_networks li {
+    float: left;
+    margin-right: 52px; }
+  #social_networks #facebook {
+    position: relative;
+    top: -5px; }
+  #social_networks #github {
+    position: relative;
+    top: -3px; }
+
+#search_box {
+  float: right;
+  width: 204px;
+  height: 38px;
+  background: url(/images/search_box_bg.png) no-repeat; }
+  #search_box #search {
+    background: none;
+    color: #ffe8cc;
+    margin-left: 37px;
+    margin-top: 12px;
+    font-size: 14px;
+    border: 0;
+    font-family: inherit;
+    width: 156px; }
+
+.blog_title_wrapper {
+  width: 844px;
+  margin: 30px auto;
+  overflow: hidden; }
+  .blog_title_wrapper .blog_title {
+    float: left;
+    margin-left: 6px; }
+    .blog_title_wrapper .blog_title .left {
+      background: url(/images/blog_title_left.png) no-repeat;
+      padding-left: 14px; }
+    .blog_title_wrapper .blog_title .title {
+      font-size: 27px;
+      background: url(/images/blog_title_center.png) repeat-x;
+      color: #fff;
+      text-align: center;
+      line-height: 63px;
+      text-shadow: 0 1px 3px #111;
+      height: 67px;
+      padding: 0 12px; }
+    .blog_title_wrapper .blog_title .right {
+      background: url(/images/blog_title_right.png) no-repeat bottom right;
+      padding-right: 15px; }
+
+#main_content {
+  width: 844px;
+  margin: 0 auto; }
+
+#entries_column {
+  float: left;
+  width: 642px; }
+  #entries_column .top {
+    background: url(/images/entry_col_bg.png) no-repeat;
+    padding-top: 55px; }
+  #entries_column .middle {
+    background: url(/images/entry_column_middle_bg.png) repeat-y;
+    padding: 1px 50px; }
+  #entries_column .bottom {
+    background: url(/images/entry_col_bottom_bg.png) no-repeat;
+    padding-bottom: 55px; }
+  #entries_column .entry {
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding-bottom: 30px; }
+    #entries_column .entry .calendar {
+      float: left;
+      width: 54px;
+      padding-top: 3px;
+      padding-bottom: 12px;
+      text-align: center;
+      background: url(/images/calendar.png) no-repeat; }
+      #entries_column .entry .calendar .month {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 11px; }
+      #entries_column .entry .calendar .day {
+        padding: 4px;
+        font-size: 28px; }
+    #entries_column .entry .content {
+      margin-left: 93px; }
+      #entries_column .entry .content .title {
+        font-size: 22px;
+        margin-bottom: 20px; }
+      #entries_column .entry .content p {
+        margin: 15px 0;
+        line-height: 20px; }
+
+#profile_picture_column {
+  float: right;
+  width: 148px;
+  text-align: center; }
+  #profile_picture_column #profile_picture {
+    padding: 6px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px #222;
+    margin-bottom: 15px;
+    margin-top: 7px; }
+  #profile_picture_column #askme {
+    background: url(/images/ask_bg.jpg) repeat-x left bottom #54b0ff;
+    padding: 5px 25px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #124591;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px #d7f3ff inset;
+    text-shadow: 0 1px 1px #111; }
