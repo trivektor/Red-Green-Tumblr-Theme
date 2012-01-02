@@ -7,7 +7,7 @@ body {
   font-family:Georgia;
   font-size:12px;
   background:url(/images/bg.jpg) top center repeat-y;
-  padding-bottom:120px;
+  padding-bottom:30px;
 }
 
 ul {
@@ -17,6 +17,7 @@ ul {
 a {
   outline-style:none;
   text-decoration:none;
+  color:#DC2509;
 }
 
 .clearfloat {
@@ -187,5 +188,38 @@ a {
   .scissor {
     position:relative;
     top:-8px;
+  }
+}
+
+#footer {
+  width:844px;
+  margin:40px auto 0;
+  
+  #powered {
+    float:left;
+    margin-left:10px;
+  }
+  
+  #copyright {
+    margin-left:170px;
+    color:#fff;
+    text-shadow:0 1px 1px #111;
+    line-height:20px;
+    font-size:14px;
+    padding-top:10px;
+    
+    a { color: #ffad1e }
+  }
+}
+
+.pagination {
+  margin:30px auto;
+  text-align:center;
+  .next, .prev { 
+    background:#222;
+    border-radius:4px;
+    padding:4px 8px;
+    color:#fff;
+    margin:0 12px;
   }
 }
