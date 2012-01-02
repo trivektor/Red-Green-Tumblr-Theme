@@ -73,6 +73,7 @@ a {
       background: url(/images/blog_title_left.png) no-repeat;
       padding-left: 14px; }
     .blog_title_wrapper .blog_title .title {
+      font-weight: normal;
       font-size: 27px;
       background: url(/images/blog_title_center.png) repeat-x;
       color: #fff;
