@@ -101,9 +101,7 @@ a {
     background: url(/images/entry_col_bottom_bg.png) no-repeat;
     padding-bottom: 55px; }
   #entries_column .entry {
-    overflow: hidden;
-    margin-bottom: 30px;
-    padding-bottom: 30px; }
+    overflow: hidden; }
     #entries_column .entry .calendar {
       float: left;
       width: 54px;
@@ -148,3 +146,12 @@ a {
     border-radius: 4px;
     box-shadow: 0 1px 1px #d7f3ff inset;
     text-shadow: 0 1px 1px #111; }
+
+.separator {
+  width: 100%;
+  border-top: 1px dashed #bbb;
+  text-align: center;
+  margin: 40px 0; }
+  .separator .scissor {
+    position: relative;
+    top: -8px; }

@@ -121,8 +121,6 @@ a {
   }
   .entry {
     overflow:hidden;
-    margin-bottom:30px;
-    padding-bottom:30px;
     .calendar  {
       float:left;
       width:54px;
@@ -178,5 +176,16 @@ a {
     border-radius:4px;
     box-shadow:0 1px 1px #d7f3ff inset;
     text-shadow:0 1px 1px #111;
+  }
+}
+
+.separator {
+  width:100%;
+  border-top:1px dashed #bbb;
+  text-align:center;
+  margin:40px 0;
+  .scissor {
+    position:relative;
+    top:-8px;
   }
 }
