@@ -110,14 +110,14 @@ a {
     #entries_column .entry .calendar {
       float: left;
       width: 54px;
-      padding-top: 3px;
-      padding-bottom: 12px;
+      height: 64px;
+      padding-top: 4px;
       text-align: center;
       background: url(/images/calendar.png) no-repeat; }
       #entries_column .entry .calendar .month {
         color: #fff;
         text-transform: uppercase;
-        font-size: 11px; }
+        font-size: 10px; }
       #entries_column .entry .calendar .day {
         padding: 4px;
         font-size: 28px; }
