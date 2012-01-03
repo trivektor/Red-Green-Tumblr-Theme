@@ -5,7 +5,10 @@
     {block:Description}
         <meta name="description" content="{MetaDescription}" />
     {/block:Description}
-    <link charset="utf-8" href="http://red-green-tumblr.heroku.com//css/master.css" media="screen" rel="stylesheet" type="text/css">
+    
+    <link charset="utf-8" href="http://fonts.googleapis.com/css?family=Marmelad" media="screen" rel="stylesheet" type="text/css">
+    
+    <link charset="utf-8" href="http://red-green-tumblr.heroku.com/css/master.css" media="screen" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div id='thin_strip'></div>
@@ -49,7 +52,7 @@
           <div class='right'>
 
             <h1 class='title'>
-                <a href="/" style="color:#fff !important">
+                <a href="/">
                     {Title}
                 </a>
             </h1>
@@ -96,8 +99,16 @@
             {/block:Text}
          {/block:Posts}
          
+         
          {block:SearchPage}
+            {block:SearchResults}
+				<h3>{lang:Found SearchResultCount results for SearchQuery 2}</h3>
+			{/block:SearchResults}
             
+            {block:NoSearchResults}
+			    <h3>{lang:No search results for SearchQuery 2}</h3>
+			{/block:NoSearchResults}
+
          {/block:SearchPage}
          
         </div>

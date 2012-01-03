@@ -1,0 +1,1907 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+
+		<!--
+
+		      ___           ___           ___           ___           ___
+		     /  /\         /  /\         /  /\         /  /\         /  /\
+		    /  /:/_       /  /::\       /  /:/_       /  /:/_       /  /:/_
+		   /  /:/ /\     /  /:/\:\     /  /:/ /\     /  /:/ /\     /  /:/ /\
+		  /  /:/_/::\   /  /:/~/:/    /  /:/ /:/_   /  /:/_/::\   /  /:/ /::\
+		 /__/:/__\/\:\ /__/:/ /:/___ /__/:/ /:/ /\ /__/:/__\/\:\ /__/:/ /:/\:\
+		 \  \:\ /~~/:/ \  \:\/:::::/ \  \:\/:/ /:/ \  \:\ /~~/:/ \  \:\/:/~/:/
+		  \  \:\  /:/   \  \::/~~~~   \  \::/ /:/   \  \:\  /:/   \  \::/ /:/
+		   \  \:\/:/     \  \:\        \  \:\/:/     \  \:\/:/     \__\/ /:/
+		    \  \::/       \  \:\        \  \::/       \  \::/        /__/:/
+		     \__\/         \__\/         \__\/         \__\/         \__\/
+
+
+		Postage Theme for Tumblr by Greg Cooper (http://gre.gs)
+		Please keep all copyright notices in place to keep the theme valid.
+
+		-->
+
+		<meta name="if:Show portrait" content="1" />
+		<meta name="if:Show people I follow" content="1" />
+		<meta name="if:Show group members" content="" />
+		<meta name="if:Show Twitter feed" content="1" />
+		<meta name="if:Show Likes" content="1" />
+		<meta name="text:LastFM Username" content="" />
+		<meta name="text:Disqus Shortname" content="" />
+		<meta name="text:Google Analytics UA Code" content="" />
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="{MetaDescription}" />
+		<link href="{Favicon}" rel="shortcut icon" />
+		<link rel="alternate" type="application/rss+xml" href="{RSS}">
+		
+		<style type="text/css">
+		
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---      CSS RESET      --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+				background: transparent;
+				border: 0;
+				color: #737373;
+				font-family: Helvetica, Arial, Verdana, "Lucida Grande", sans-serif;
+				margin: 0;
+				outline: 0;
+				padding: 0;
+				vertical-align: baseline;
+				}
+			
+			body {
+				line-height: 1;
+				}
+			
+			ol, ul {
+				list-style: none;
+				}
+			
+			blockquote, q {
+				quotes: none;
+				}
+			
+			:focus {
+				outline: 0;
+				}
+			
+			ins {
+				text-decoration: none;
+				}
+			
+			del {
+				text-decoration: line-through;
+				}
+			
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+				}
+			
+			blockquote, q {
+				quotes: none;
+				}
+			
+			blockquote:before, blockquote:after, q:before, q:after {
+				content: "";
+				content: none;
+				}
+			
+			textarea {
+				border: 0;
+				color: #737373;
+				font-family: Helvetica, Arial, Verdana, "Lucida Grande", sans-serif;
+				font-size: 13px;
+				overflow: auto;
+				}
+			
+			input[type="text"], input[type="password"], input[type="submit"] {
+				border: 0;
+				color: #737373;
+				font-family: Helvetica, Arial, Verdana, "Lucida Grande", sans-serif;
+				font-size: 13px;
+				margin: 0;
+				outline: none;
+				padding: 0;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---        FONTS        --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			a, a:visited {
+				color: #dc2509;
+				font-size: inherit;
+				font-weight: inherit;
+				text-decoration: none;
+				}
+			
+			a:hover {
+				text-decoration: underline;
+				}
+			
+			h1, h2, h3, h4, h5, h6 {
+				color: #595959;
+				line-height: 1.25em;
+				text-shadow: #ffffff 0 1px 0;
+				}
+			
+			h1 { 
+				font-size: 23px;
+				}
+				
+			h2 {
+				font-size: 20px; 
+				}
+				
+			h3 {
+				font-size: 18px; 
+				}
+				
+			h4 {
+				font-size: 16px; 
+				}
+				
+			h5 {
+				font-size: 15px;
+				}
+				
+			h6 { 
+				font-size: 14px; 
+				}
+			
+			p {
+				font-size: 13px;
+				line-height: 1.25em;
+				padding: 7px 0;
+				text-shadow: #ffffff 0 1px 1px;
+				}
+			
+			hr {
+				background: transparent;
+				border-bottom: 1px #ffffff solid;
+				border-left: 0;
+				border-right: 0;
+				border-top: 1px #dcdcdc solid;
+				height: 0px;
+				margin: 10px 50px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---        BUILD        --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			body {
+				background: #fafafa url('http://static.tumblr.com/l3zugnz/7KJkvwe70/bg.png') fixed repeat-x 0 0;
+				min-width: 1000px;
+				}
+			
+			iframe#tumblr_controls {
+				margin: 11px 3px 0 0;
+				position: fixed !important;
+				}
+			
+			a.PST-install, a.PST-install:visited, a.PST-install:hover {
+				background: url('http://static.tumblr.com/thpaaos/dHHkt0jor/install_theme.png') no-repeat 0 0;
+				cursor: pointer;
+				display: block;
+				height: 20px;
+				position: fixed;
+				right: 5px;
+				top: 37px;
+				width: 96px;
+				}
+				
+			.PST-stripes {
+				background: url('http://static.tumblr.com/l3zugnz/YbHkvwe99/postage.png') repeat-x 0 0;
+				height: 11px;
+				position: fixed;
+				width: 100%;
+				z-index: 50;
+				}
+			
+			a.PST-stamp, a.PST-stamp:visited, a.PST-stamp:hover {
+				background: url('http://static.tumblr.com/l3zugnz/0QGkvweay/tumblrstamp.png') no-repeat 0 0;
+				display: block;
+				height: 87px;
+				position: fixed;
+				left: 0;
+				top: 8px;
+				width: 104px;
+				z-index: 30;
+				}
+				
+			.PST-wrapper {
+				margin: 0 auto;
+				position: relative;
+				top: 0;
+				width: 787px;
+				z-index: 40;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---       HEADER        --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.PST-header {
+				border-bottom: 1px #dcdcdc solid;
+				padding-bottom: 25px;
+				}
+			
+			.PST-header h1 {
+				font-size: 36px;
+				line-height: 42px;
+				padding: 40px 0 20px;
+				text-align: center;
+				}
+			
+			.PST-header h1 a, .PST-header h1 a:visited {
+				color: #595959;
+				}
+			
+			.PST-header h1 a:hover {
+				color: #dc2509;
+				text-decoration: none;
+				}
+			
+			.PST-description {
+				text-align: center;
+				}
+			
+			.PST-description, .PST-description p, .PST-description span, .PST-description b, .PST-description strong, .PST-description i, .PST-description em, .PST-description u, .PST-description s {
+				color: #8c8c8c;
+				font-size: 17px;
+				line-height: 1.25em;
+				text-shadow: #ffffff 0 1px 1px;
+				}
+			
+			.PST-description a, .PST-description a:visited {
+				color: #dc2509;
+				font-size: 17px;
+				line-height: 1.25em;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---       COLUMNS       --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.PST-columns {
+				border-bottom: 1px #dcdcdc solid;
+				border-top: 1px #ffffff solid;
+				overflow: hidden;
+				padding: 25px 0;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---        POSTS        --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts {
+				border-right: 1px #dcdcdc solid;
+				float: left;
+				padding-right: 25px;
+				width: 535px;
+				}
+			
+			ul.PST-posts li.PST-posts-li {
+				min-height: 60px;
+				overflow: hidden;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box {
+				overflow: hidden;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box .PST-posts-box-side {
+				float: left;
+				width: 26px;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background: url('http://static.tumblr.com/l3zugnz/2sGl2gwc0/sideicons.png') no-repeat 0 0;
+				height: 25px;
+				width: 26px;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box .PST-posts-box-side a.PST-posts-box-side-perma, ul.PST-posts li.PST-posts-li .PST-posts-box .PST-posts-box-side a.PST-posts-box-side-perma:visited {
+				background: url('http://static.tumblr.com/l3zugnz/2sGl2gwc0/sideicons.png') no-repeat 0 -216px;
+				display: none;
+				height: 25px;
+				margin-top: 10px;
+				width: 26px;
+				}
+			
+			ul.PST-posts li:hover .PST-posts-box .PST-posts-box-side a.PST-posts-box-side-perma {
+				display: block;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box .PST-posts-box-side a.PST-posts-box-side-perma:hover {
+				background-position: -32px -216px;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box .PST-posts-box-content {
+				float: right;
+				width: 500px;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content ul, ul.PST-posts li.PST-posts-li .PST-posts-box-content ol {
+				font-size: 13px;
+				margin: 7px 0 7px 40px;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content ul {
+				list-style: disc outside;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content ol {
+				list-style: decimal outside;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content ul li, ul.PST-posts li.PST-posts-li .PST-posts-box-content ol li {
+				line-height: 1.3em;
+				padding: 3px 0;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content blockquote {
+				-moz-border-radius-bottomright: 4px;
+				-moz-border-radius-topright: 4px;
+				-webkit-border-bottom-right-radius: 4px;
+				-webkit-border-top-right-radius: 4px;
+				background: #f0f0f0;
+				border-left: 2px #bababa solid;
+				border-bottom-right-radius: 4px;
+				border-top-right-radius: 4px;
+				color: #323232;
+				font-size: 13px;
+				margin: 7px 20px;
+				padding: 3px 10px;
+				text-shadow: #ffffff 0 1px 1px;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details {
+				margin-top: 13px;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details p {
+				color: #8c8c8c;
+				font-size: 11px;
+				line-height: 13px;
+				padding: 2px 0 2px 17px;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details a, ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details a:visited {
+				color: #595959;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details a:hover {
+				color: #dc2509;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details .PST-posts-box-content-details-icon {
+				background: url('http://static.tumblr.com/l3zugnz/ClVl2gwax/detailsicons.png') no-repeat 0 0;
+				height: 13px;
+				left: 0;
+				margin-top: 2px;
+				position: absolute;
+				top: 0;
+				width: 14px;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details .PST-posts-box-content-details-upper, ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details .PST-posts-box-content-tags {
+				overflow: hidden;
+				position: relative;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details .PST-posts-box-content-timestamp, ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details .PST-posts-box-content-notes, ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details .PST-posts-box-content-comments {
+				float: left;
+				margin-right: 5px;
+				position: relative;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details .PST-posts-box-content-notes .PST-posts-box-content-details-icon {
+				background-position: -20px 0;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details .PST-posts-box-content-comments .PST-posts-box-content-details-icon {
+				background-position: -40px 0;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details .PST-posts-box-content-tags .PST-posts-box-content-details-icon {
+				background-position: -60px 0;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-box-content .PST-posts-box-content-details .PST-posts-box-content-external .PST-posts-box-content-details-icon {
+				background-position: -80px 0;
+				}
+			
+			ul.PST-posts li.PST-posts-li .PST-posts-break {
+				border-bottom: 1px #ffffff solid;
+				border-top: 1px #dcdcdc solid;
+				height: 0;
+				margin: 25px 0;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- ---    SEARCHPAGE, DAYPAGE, TAGPAGE     --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.SEARCHPAGE, ul.PST-posts li.DAYPAGE, ul.PST-posts li.TAGPAGE {
+				min-height: 0;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---    POSTS - TEXT     --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.TEXT .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -372px;
+				}
+			
+			ul.PST-posts li.TEXT .PST-posts-box-content img {
+				-moz-border-radius: 3px;
+				-moz-box-shadow: 2px 2px 3px #e0e0e0;
+				-webkit-border-radius: 3px;
+				-webkit-box-shadow: 2px 2px 3px #e0e0e0;
+				background: #ffffff;
+				border: 1px #b9b9b9 solid;
+				border-radius: 3px;
+				box-shadow: 2px 2px 3px #e0e0e0;
+				max-width: 488px;
+				padding: 4px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---    POSTS - PHOTO    --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.PHOTO .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -31px;
+				}
+			
+			ul.PST-posts li.PHOTO .PHOTO-display {
+				overflow: hidden;
+				}
+			
+			ul.PST-posts li.PHOTO .PHOTO-display .PHOTO-display-width {
+				float: left;
+				position: relative;
+				}
+			
+			ul.PST-posts li.PHOTO .PHOTO-display a.PHOTO-display-high-res, ul.PST-posts li.PHOTO .PHOTO-display a.PHOTO-display-high-res:visited, ul.PST-posts li.PHOTO .PHOTO-display a.PHOTO-display-high-res:hover {
+				background: url('http://static.tumblr.com/l3zugnz/78Lkvwe7w/hiresbutton.png') no-repeat 0 0;
+				bottom: 0;
+				display: none;
+				height: 50px;
+				margin: 0 14px 16px 0;
+				position: absolute;
+				right: 0;
+				width: 50px;
+				z-index: 100;
+				}
+			
+			ul.PST-posts li:hover .PHOTO-display a.PHOTO-display-high-res, ul.PST-posts li:hover .PHOTO-display a.PHOTO-display-high-res:visited, ul.PST-posts li:hover .PHOTO-display a.PHOTO-display-high-res:hover {
+				display: block !important;
+				}
+			
+			ul.PST-posts li.PHOTO .PHOTO-display img {
+				-moz-border-radius: 3px;
+				-moz-box-shadow: 2px 2px 3px #e0e0e0;
+				-webkit-border-radius: 3px;
+				-webkit-box-shadow: 2px 2px 3px #e0e0e0;
+				background: #ffffff;
+				border: 1px #b9b9b9 solid;
+				border-radius: 3px;
+				box-shadow: 2px 2px 3px #e0e0e0;
+				max-width: 488px;
+				padding: 4px;
+				position: relative;
+				z-index: 90;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---  POSTS - PHOTOSET   --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.PHOTOSET .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -31px;
+				}
+			
+			ul.PST-posts li.PHOTOSET .PST-posts-box .PST-posts-box-content .html_photoset embed {
+				background: #ffffff;
+				border: 1px #dcdcdc solid;
+				max-width: 492px;
+				padding: 3px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---    POSTS - VIDEO    --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.VIDEO .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -62px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---    POSTS - AUDIO    --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.AUDIO .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -93px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info {
+				background: url('http://static.tumblr.com/l3zugnz/oTgkw04g1/player.png') no-repeat 0 0;
+				height: 125px;
+				overflow: hidden;
+				width: 500px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_album {
+				float: left;
+				height: 104px;
+				margin: 11px 0 0 11px;
+				position: relative;
+				width: 104px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_album .AUDIO_info_album_overlay {
+				background: url('http://static.tumblr.com/l3zugnz/3CMkw05at/album.png') no-repeat 0 0;
+				height: 104px;
+				position: absolute;
+				width: 104px;
+				z-index: 90;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_album img {
+				height: 102px;
+				margin: 1px;
+				position: absolute;
+				width: 102px;
+				z-index: 80;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_album .AUDIO_info_album_none {
+				background: url('http://static.tumblr.com/l3zugnz/3CMkw05at/album.png') no-repeat 0 -110px;
+				height: 104px;
+				position: absolute;
+				width: 104px;
+				z-index: 70;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_float {
+				float: right;
+				margin: 11px 10px 0 0;
+				overflow: hidden;
+				width: 370px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_player {
+				overflow: hidden;
+				margin-bottom: 1px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_player .AUDIO_info_player_embed {
+				float: left;
+				margin: 3px 0 3px 3px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_player .AUDIO_info_player_embed embed {
+				height: 33px;
+				width: 251px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_player .AUDIO_info_player_download {
+				float: right;
+				margin: 8px 7px 0 0;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_player .AUDIO_info_player_download a, ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_player .AUDIO_info_player_download a:visited {
+				background: url('http://static.tumblr.com/l3zugnz/oTgkw04g1/player.png') no-repeat -506px 0;
+				display: block;
+				height: 25px;
+				width: 26px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_player .AUDIO_info_player_download a:hover {
+				background-position: -506px -31px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_ta {
+				float: left;
+				height: 60px;
+				width: 279px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_ta .AUDIO_info_track, ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_ta .AUDIO_info_artist {
+				height: 28px;
+				line-height: 28px;
+				margin: 1px 6px 0 27px;
+				overflow: hidden;
+				position: relative;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_ta .AUDIO_info_none {
+				font-size: 13px;
+				font-weight: bold;
+				height: 28px;
+				line-height: 28px;
+				position: absolute;
+				z-index: 80;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_ta .AUDIO_info_overlay {
+				background: url('http://static.tumblr.com/l3zugnz/oTgkw04g1/player.png') no-repeat -148px -55px;
+				color: #595959;
+				font-size: 13px;
+				font-weight: bold;
+				height: 28px;
+				line-height: 28px;
+				position: absolute;
+				width: 270px;
+				z-index: 90;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_ta .AUDIO_info_artist {
+				margin: 4px 6px 0 27px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_ta .AUDIO_info_artist a, ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_ta .AUDIO_info_artist a:visited {
+				color: #595959;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_ta .AUDIO_info_artist a:hover {
+				color: #dc2509;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_plays {
+				float: left;
+				height: 60px;
+				margin-left: 4px;
+				overflow: hidden;
+				width: 87px;
+				text-align: center;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_plays .AUDIO_info_plays_count {
+				color: #595959;
+				font-size: 20px;
+				font-weight: bold;
+				padding: 13px 0 1px;
+				}
+			
+			ul.PST-posts li.AUDIO .PST-posts-box-content .AUDIO_info .AUDIO_info_plays .AUDIO_info_plays_label {
+				color: #acb09b;
+				font-size: 11px;
+				font-weight: bold;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---    POSTS - QUOTE    --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.QUOTE .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -124px;
+				}
+			
+			ul.PST-posts li.QUOTE .PST-posts-box-content h1 span.QUOTE_quotation {
+				color: #c7c7c7;
+				float: right;
+				font-size: 90px;
+				line-height: 1em;
+				margin-top: -10px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---    POSTS - LINK    --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.LINK .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -155px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---    POSTS - CHAT    --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.CHAT .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -186px;
+				}
+			
+			ul.PST-posts li.CHAT .PST-posts-box-content ul {
+				list-style: none;
+				margin: 7px 0;
+				}
+			
+			ul.PST-posts li.CHAT .PST-posts-box-content ul li {
+				background: #f0f0f0;
+				font-size: 13px;
+				margin: 2px 0;
+				padding: 5px;
+				}
+			
+			ul.PST-posts li.CHAT .PST-posts-box-content ul li.even {
+				background: #e5e5e5;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---    POSTS - NOTES    --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.NOTES .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -279px;
+				}
+			
+			ul.PST-posts li.NOTES .PST-posts-box-content ol.notes {
+				list-style: none;
+				margin: 0;
+				}
+			
+			ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li {
+				-khtml-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				margin: 2px 0;
+				overflow: hidden;
+				padding: 4px;
+				}
+			
+			ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li.reblog {
+				background: #ebebeb;
+				}
+			
+			ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li.like {
+				background: #e0e0e0;
+				}
+			
+			ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li img {
+				float: left;
+				margin-right: 4px;
+				}
+			
+			ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li span.action {
+				font-size: 11px;
+				font-weight: bold;
+				}
+			
+			ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li.like a, ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li.like a:visited, ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li.like a:hover {
+				color: #005c89;
+				}
+			
+			ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li.reblog blockquote a, ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li.reblog blockquote a:visited, ul.PST-posts li.NOTES .PST-posts-box-content ol.notes li.reblog blockquote a:hover {
+				color: #595959;
+				font-size: 11px;
+				text-decoration: none;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---   POSTS - COMMENTS  --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.COMMENTS .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -248px;
+				}
+			
+			ul.PST-posts li.COMMENTS .PST-posts-box-content #disqus_thread #dsq-content #dsq-comments-title h3 {
+				padding-bottom: 10px;
+				}
+			
+			ul.PST-posts li.COMMENTS .PST-posts-box-content #disqus_thread #dsq-content #dsq-comments-title h3 span {
+				font-size: inherit;
+				}
+			
+			ul.PST-posts li.COMMENTS .PST-posts-box-content #disqus_thread #dsq-content .dsq-options {
+				display: none;
+				}
+			
+			ul.PST-posts li.COMMENTS .PST-posts-box-content #disqus_thread #dsq-content #dsq-new-post {
+				-kthml-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				background: url('http://media.disqus.com/images/themes/narcissus/header-grey.png') repeat 0 0;
+				padding: 10px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---     POSTS - ANSWER     --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.ANSWER .PST-posts-box .PST-posts-box-side .PST-posts-box-side-type {
+				background-position: 0 -310px;
+				}
+			
+			ul.PST-posts li.ANSWER .PST-posts-box-content hr {
+				margin: 15px 50px;
+				}
+			
+			ul.PST-posts li.ANSWER .PST-posts-box-content .ANSWER_question h1 span, ul.PST-posts li.ANSWER .PST-posts-box-content .ANSWER_answer h3 span {
+				color: #a6a6a6;
+				font-size: 23px;
+				}
+			
+			ul.PST-posts li.ANSWER .PST-posts-box-content .ANSWER_question h1 {
+				line-height: 1.1em;
+				}
+			
+			ul.PST-posts li.ANSWER .PST-posts-box-content .ANSWER_answer h3 span {
+				display: inline;
+				font-size: 18px;
+				}
+			
+			ul.PST-posts li.ANSWER .PST-posts-box-content .ANSWER_answer p {
+				display: inline;
+				font-size: 18px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---      PAGINATION     --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			ul.PST-posts li.PST-posts-pagination {
+				min-height: 0;
+				}
+				
+			ul.PST-posts li.PST-posts-pagination div {
+				float: left;
+				height: 27px;
+				width: 34px;
+				}
+			
+			ul.PST-posts li.PST-posts-pagination .PST-posts-pagination-older {
+				float: right;
+				}
+			
+			ul.PST-posts li.PST-posts-pagination a, ul.PST-posts li.PST-posts-pagination a:visited, ul.PST-posts li.PST-posts-pagination a:hover {
+				background: url('http://static.tumblr.com/l3zugnz/5wcl2gwbj/pagination.png') no-repeat 0 0;
+				display: block;
+				height: 27px;
+				width: 34px;
+				}
+			
+			ul.PST-posts li.PST-posts-pagination .PST-posts-pagination-newer a, ul.PST-posts li.PST-posts-pagination .PST-posts-pagination-newer a:visited {
+				background-position: 0 0;
+				}
+			
+			ul.PST-posts li.PST-posts-pagination .PST-posts-pagination-newer a:hover {
+				background-position: 0 -33px;
+				}
+			
+			ul.PST-posts li.PST-posts-pagination .PST-posts-pagination-older a, ul.PST-posts li.PST-posts-pagination .PST-posts-pagination-older a:visited {
+				background-position: -40px 0;
+				}
+			
+			ul.PST-posts li.PST-posts-pagination .PST-posts-pagination-older a:hover {
+				background-position: -40px -33px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---       SIDEBAR       --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.PST-sidebar {
+				border-left: 1px #ffffff solid;
+				float: right;
+				padding-left: 25px;
+				width: 200px;
+				}
+			
+			.PST-sidebar .PST-sidebar-box {
+				margin-bottom: 15px;
+				}
+			
+			.PST-sidebar .PST-sidebar-box h3 a, .PST-sidebar .PST-sidebar-box h3 a:visited {
+				color: #595959;
+				}
+			
+			.PST-sidebar .PST-sidebar-box h3 a:hover {
+				color: #dc2509;
+				}
+			
+			.PST-portrait {
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				background: #f0f0f0;
+				border-radius: 3px;
+				display: block;
+				padding: 30px;
+				text-align: center;
+				}
+			
+			.PST-portrait img {
+				-moz-border-radius: 3px;
+				-moz-box-shadow: 2px 2px 3px #e0e0e0;
+				-webkit-border-radius: 3px;
+				-webkit-box-shadow: 2px 2px 3px #e0e0e0;
+				background: #ffffff;
+				border: 1px #b9b9b9 solid;
+				border-radius: 3px;
+				box-shadow: 2px 2px 3px #e0e0e0;
+				padding: 4px;
+				width: 128px;
+				}
+			
+			.PST-portrait img:hover {
+				border-color: #dc2509;
+				}
+				
+			ul.PAGES {
+				border-bottom: 1px #ffffff solid;
+				border-top: 1px #dcdcdc solid;
+				margin-top: 6px;
+				}
+				
+			ul.PAGES li a, ul.PAGES li a:visited {
+				border-bottom: 1px #dcdcdc solid;
+				border-top: 1px #ffffff solid;
+				cursor: pointer;
+				display: block;
+				font-size: 13px;
+				font-weight: bold;
+				padding: 8px;
+				}
+				
+			ul.PAGES li a:hover {
+				background: #dc2509;
+				border-bottom-color: #8f1806;
+				color: #ffffff;
+				text-decoration: none;
+				}
+			
+			form.PST-search {
+				background: url('http://static.tumblr.com/l3zugnz/PZ0kvwe9t/searchinput.png') no-repeat 0 0;
+				height: 30px;
+				width: 200px;
+				}
+			
+			form.PST-search input {
+				background: transparent;
+				font-size: 12px;
+				line-height: 12px;
+				margin: 8px 5px 8px 28px;
+				width: 167px;
+				}
+				
+			.PST-sidebar ul.PST-sidebar-buttons li {
+				height: 45px;
+				margin-bottom: 8px;
+				width: 200px;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li a, .PST-sidebar ul.PST-sidebar-buttons li a:visited {
+				background: url('http://static.tumblr.com/l3zugnz/yEkkvyh0v/sidebarbutton.png') no-repeat 0 0;
+				display: block;
+				height: 45px;
+				width: 200px;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li a:hover {
+				background-position: 0 -51px;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li a em, .PST-sidebar ul.PST-sidebar-buttons li a:visited em {
+				background: url('http://static.tumblr.com/l3zugnz/TJol2gwah/buttonicons.png') no-repeat 0 0;
+				display: block;
+				float: left;
+				height: 17px;
+				margin: 12px 7px 0 12px;
+				width: 18px;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li a span, .PST-sidebar ul.PST-sidebar-buttons li a:visited span {
+				display: block;
+				float: left;
+				font-size: 15px;
+				font-weight: bold;
+				line-height: 34px;
+				height: 34px;
+				margin-top: 4px;
+				width: 160px;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li a:hover span {
+				color: #dc2509;
+				text-decoration: none;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---       FOLLOW       --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.PST-sidebar ul.PST-sidebar-buttons li a:hover em {
+				background-position: -24px 0;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li a span .FOLLOW-text, .PST-sidebar .FOLLOW .SIDEBAR_button a:visited span .FOLLOW-text {
+				font-size: 15px;
+				float: left;
+				width: 80;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li a:hover span strong.FOLLOW-text {
+				color: #dc2509;
+				text-decoration: none;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li a span strong.FOLLOW-logo, .PST-sidebar ul.PST-sidebar-buttons li a:visited span strong.FOLLOW-logo {
+				background: url('http://static.tumblr.com/l3zugnz/V0skvyiow/followlogo.png') no-repeat 0 0;
+				display: block;
+				float: left;
+				height: 13px;
+				margin: 9px 0 0 4px;
+				width: 59px;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li a:hover span strong.FOLLOW-logo {
+				background-position: 0 -19px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---        ASK ME       --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.PST-sidebar ul.PST-sidebar-buttons li.ASK-ME a em, .PST-sidebar ul.PST-sidebar-buttons li.ASK-ME a:visited em {
+				background-position: 0 -23px;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li.ASK-ME a:hover em {
+				background-position: -24px -23px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---       SUBMIT        --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.PST-sidebar ul.PST-sidebar-buttons li.SUBMIT a em, .PST-sidebar ul.PST-sidebar-buttons li.SUBMIT a:visited em {
+				background-position: 0 -46px;
+				}
+			
+			.PST-sidebar ul.PST-sidebar-buttons li.SUBMIT a:hover em {
+				background-position: -24px -46px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---       TWITTER       --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.TWITTER {
+				overflow: hidden;
+				}
+			
+			.TWITTER #tweets a, .TWITTER #tweets a:visited {
+				-khtml-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				background: #79a4ba;
+				color: #ffffff;
+				display: block;
+				margin: 4px 0;
+				padding: 10px;
+				}
+			
+			.TWITTER #tweets .content {
+				color: #ffffff;
+				font-size: 11px;
+				font-weight: bold;
+				}
+			
+			.TWITTER .TWITTER_bird {
+				background: url('http://static.tumblr.com/l3zugnz/204kvwebe/twitterbird.png') no-repeat 0 0;
+				height: 55px;
+				margin-top: -10px;
+				width: 200px;
+				}
+			
+			.TWITTER .TWITTER_bird a, .TWITTER .TWITTER_bird a:visited, .TWITTER .TWITTER_bird a:hover {
+				display: block;
+				height: 55px;
+				width: 200px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---       LASTFM        --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			.LASTFM h3 {
+				padding-bottom: 6px;
+				}
+			
+			.LASTFM .LASTFM_widget {
+				-khtml-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-bottom: 7px #e5e5e5 solid;
+				border-left: 8px #e5e5e5 solid;
+				border-right: 8px #e5e5e5 solid;
+				border-top: 7px #e5e5e5 solid;
+				}
+			
+			.LASTFM .LASTFM_widget object {
+				display: block;
+				height: 179px;
+				margin: 0;
+				padding: 0;
+				width: 186px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---        LIKES        --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.LIKES ul#likes li {
+				-khtml-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				background: #ebebeb;
+				margin: 4px 0;
+				padding: 10px;
+				}
+			
+			.LIKES ul#likes li .post_info_top {
+				display: block !important;
+				padding-bottom: 4px;
+				}
+			
+			.LIKES ul#likes li .post_info_top a, .LIKES ul#likes li .post_info_top span {
+				font-size: 11px;
+				}
+			
+			.LIKES ul#likes li.like_chat_post .like_title {
+				font-size: 13px;
+				font-weight: bold;
+				}
+			
+			.LIKES ul#likes li.like_photo_post img {
+				-moz-border-radius: 3px;
+				-moz-box-shadow: 2px 2px 3px #e0e0e0;
+				-webkit-border-radius: 3px;
+				-webkit-box-shadow: 2px 2px 3px #e0e0e0;
+				background: #ffffff;
+				border: 1px #b9b9b9 solid;
+				border-radius: 3px;
+				box-shadow: 2px 2px 3px #e0e0e0;
+				max-height: 174px;
+				max-width: 174px;
+				padding: 3px;
+				}
+			
+			.LIKES ul#likes li.like_photo_post img:hover {
+				border-color: #dc2509;
+				}
+			
+			.LIKES ul#likes li.like_video_post .like_video img {
+				background: #ffffff;
+				border: 1px #d7d7d7 solid;
+				max-width: 174px;
+				max-height: 174px;
+				padding: 2px;
+				}
+			
+			.LIKES ul#likes li.like_video_post .like_video img:hover {
+				border-color: #dc2509;
+				}
+			
+			.LIKES ul#likes li.like_audio_post .like_audio embed {
+				width: 180px;
+				}
+			
+			.LIKES ul#likes li.like_quote_post .like_quote span {
+				font-size: 13px;
+				font-weight: bold;
+				}
+			
+			.LIKES ul#likes li.like_quote_post .like_source {
+				font-size: 11px;
+				}
+			
+			.LIKES ul#likes li.like_photo_post .like_caption, .LIKES ul#likes li.like_chat_post p, .LIKES ul#likes li.like_link_post .like_caption, .LIKES ul#likes li.like_audio_post .like_post_body, .LIKES ul#likes li.like_chat_post .like_chat, .LIKES ul#likes li.like_video_post p, .LIKES ul#likes li.like_link_post .like_caption {
+				display: none;
+				}
+				
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---       MEMBERS       --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.MEMBERS ul li {
+				overflow: hidden;
+				margin: 4px 0;
+				}
+			
+			.MEMBERS ul li img {
+				background: #ffffff;
+				border: 1px #dcdcdc solid;
+				float: left;
+				margin-right: 5px;
+				padding: 2px;
+				}
+			
+			.MEMBERS ul li span.MEMBERS_name {
+				font-weight: bold;
+				line-height: 36px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---      FOLLOWING      --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.FOLLOWING ul {
+				display: block;
+				max-height: 200px;
+				margin: 5px 0 12px;
+				overflow: hidden;
+				width: 200px;
+				}
+			
+			.FOLLOWING ul li {
+				float: left;
+				height: 40px;
+				width: 40px;
+				}
+			
+			
+			/*  --- --- --- --- --- --- --- --- --- --- --- ---
+			--- --- --- ---        FOOTER       --- --- --- ---
+			--- --- --- --- --- --- --- --- --- --- --- ---  */
+			
+			
+			.PST-footer {
+				border-top: 1px #ffffff solid;
+				overflow: hidden;
+				padding: 25px 0 35px;
+				}
+				
+			.PST-footer .PST-footer-info {
+				float: left;
+				overflow: hidden;
+				width: 655px;
+				}
+			
+			.PST-footer .PST-footer-info a#PST-footer-info-powered, .PST-footer .PST-footer-info a#PST-footer-info-powered:visited {
+				background: url('http://static.tumblr.com/l3zugnz/sKbkvydni/powered.png') no-repeat 0 0;
+				display: block;
+				float: left;
+				height: 33px;
+				margin-right: 6px;
+				width: 125px;
+				}
+			
+			.PST-footer .PST-footer-info a#PST-footer-info-powered:hover {
+				background-position: 0 -39px;
+				}
+			
+			.PST-footer .PST-footer-info .PST-footer-info-text {
+				float: left;
+				width: 510px;
+				}
+			
+			.PST-footer .PST-footer-info .PST-footer-info-text p.PST-footer-info-text-notices {
+				font-size: 11px;
+				padding: 6px 0px 1px;
+				}
+			
+			.PST-footer .PST-footer-info .PST-footer-info-text p.PST-footer-info-text-search {
+				color: #999999;
+				font-size: 10px;
+				padding: 0;
+				}
+			
+			.PST-footer ul.PST-footer-actions {
+				float: right;
+				width: 122px;
+				}
+			
+			.PST-footer ul.PST-footer-actions li.PST-footer-actions-rss, .PST-footer ul.PST-footer-actions li.PST-footer-actions-random, .PST-footer ul.PST-footer-actions li.PST-footer-actions-archive {
+				float: left;
+				width: 34px;
+				}
+			
+			.PST-footer ul.PST-footer-actions li.PST-footer-actions-rss, .PST-footer ul.PST-footer-actions li.PST-footer-actions-random {
+				margin-right: 10px;
+				}
+			
+			.PST-footer ul.PST-footer-actions a, .PST-footer ul.PST-footer-actions a:visited, .PST-footer ul.PST-footer-actions a:hover {
+				background: url('http://static.tumblr.com/l3zugnz/Id5l2gw9t/actionicons.png') no-repeat 0 0;
+				display: block;
+				height: 33px;
+				width: 34px;
+				}
+			
+			.PST-footer ul.PST-footer-actions li.PST-footer-actions-rss a, .PST-footer ul.PST-footer-actions li.PST-footer-actions-rss a:visited {
+				background-position: 0 -78px;
+				}
+			
+			.PST-footer ul.PST-footer-actions li.PST-footer-actions-rss a:hover {
+				background-position: -40px -78px;
+				}
+			
+			.PST-footer ul.PST-footer-actions li.PST-footer-actions-random a, .PST-footer ul.PST-footer-actions li.PST-footer-actions-random a:visited {
+				background-position: 0 -39px;
+				}
+			
+			.PST-footer ul.PST-footer-actions li.PST-footer-actions-random a:hover {
+				background-position: -40px -39px;
+				}
+			
+			.PST-footer ul.PST-footer-actions li.PST-footer-actions-archive a, .PST-footer ul.PST-footer-actions li.PST-footer-actions-archive a:visited {
+				background-position: 0 0;
+				}
+			
+			.PST-footer ul.PST-footer-actions li.PST-footer-actions-archive a:hover {
+				background-position: -40px 0;
+				}
+            
+            .tag:before, .search_query:before { content:'“'; }
+        	.tag:after, .search_query:after { content:'”'; }
+            
+			{CustomCSS}
+
+		</style>
+		
+		<title>{Title}{block:Pagination} - {lang:Page CurrentPage of TotalPages}{/block:Pagination}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+
+	</head>
+	<body>
+	
+		<a class="PST-install" href="http://www.tumblr.com/theme/6177" target="_blank"></a>
+		<div class="PST-stripes"></div>
+		<a class="PST-stamp" href="http://gre.gs" target="_blank" title="Made by Gre.gs"></a>
+
+		<div class="PST-wrapper">
+		
+			<div class="PST-header">
+			
+				<h1><a href="/">{Title}</a></h1>
+				<div class="PST-description">{Description}</div>
+				
+			</div>
+			
+			<div class="PST-columns">
+
+				<ul class="PST-posts" id="posts">
+
+					{block:SearchPage}
+					<li class="PST-posts-li SEARCHPAGE">
+					    {block:SearchResults}
+						    <h3>{lang:Found SearchResultCount results for SearchQuery 2}</h3>
+						{/block:SearchResults}
+						{block:NoSearchResults}
+						    <h3>{lang:No search results for SearchQuery 2}</h3>
+						{/block:NoSearchResults}
+						<div class="PST-posts-break"></div>
+						{block:NoSearchResults}<p>Couldn't find anything with that keyword I'm afraid, try a different keyword!</p>{/block:NoSearchResults}
+					</li>
+					{/block:SearchPage}
+					{block:TagPage}
+					<li class="PST-posts-li TAGPAGE">
+						<h3>{lang:Showing posts tagged Tag 2}</h3>
+						<div class="PST-posts-break"></div>
+					</li>
+					{/block:TagPage}
+					
+					{block:DayPage}
+					<li class="PST-posts-li TAGPAGE">
+						<h3>{lang:Viewing everything posted on Month DayOfMonth Year}</h3>
+						<div class="PST-posts-break"></div>
+					</li>
+					{/block:DayPage}
+					
+					{block:Posts}
+					<li class="PST-posts-li {block:Text}TEXT{/block:Text}{block:Photo}PHOTO{/block:Photo}{block:Video}VIDEO{/block:Video}{block:Audio}AUDIO{/block:Audio}{block:Link}LINK{/block:Link}{block:Quote}QUOTE{/block:Quote}{block:Chat}CHAT{/block:Chat}{block:Answer}ANSWER{/block:Answer} {PostID} {TagsAsClasses} new_post">
+						
+						<div class="PST-posts-box">
+						
+							<div class="PST-posts-box-side">
+								<div class="PST-posts-box-side-type"></div>
+								<a class="PST-posts-box-side-perma" href="{Permalink}"></a>
+							</div>
+							
+							<div class="PST-posts-box-content">
+							
+								<!-- TEXT -->
+								{block:Text}
+									{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+									{Body}
+								{/block:Text}
+								<!-- /TEXT -->
+	
+								<!-- PHOTO -->
+								{block:Photo}
+									<div class="PHOTO-display">
+										<div class="PHOTO-display-width">
+											{block:HighRes}<a class="PHOTO-display-high-res" href="{PhotoURL-HighRes}"></a>{/block:HighRes}
+											{LinkOpenTag}<img alt="{PhotoAlt}" src="{PhotoURL-500}" />{LinkCloseTag}
+										</div>
+									</div>
+									{block:Caption}{Caption}{/block:Caption}
+								{/block:Photo}
+								<!-- /PHOTO -->
+	
+	
+								<!-- PHOTOSET -->
+								{block:Photoset}
+									{Photoset-500}
+									{block:Caption}{Caption}{/block:Caption}
+								{/block:Photoset}
+								<!-- /PHOTOSET -->
+	
+	
+								<!-- VIDEO -->
+								{block:Video}
+									{Video-500}
+									{block:Caption}{Caption}{/block:Caption}
+								{/block:Video}
+								<!-- /VIDEO -->
+	
+	
+								<!-- AUDIO -->
+								{block:Audio}
+									<div class="AUDIO_info">
+										<div class="AUDIO_info_album">
+											<div class="AUDIO_info_album_overlay"></div>
+											{block:AlbumArt}<img  alt="" src="{AlbumArtURL}" />{/block:AlbumArt}
+											<div class="AUDIO_info_album_none"></div>
+										</div>
+										<div class="AUDIO_info_float">
+											<div class="AUDIO_info_player">
+												<div class="AUDIO_info_player_embed">
+													{AudioPlayerGrey}
+												</div>
+												{block:ExternalAudio}
+												<div class="AUDIO_info_player_download">
+													<a href="{ExternalAudioURL}" target="_blank"></a>
+												</div>
+												{/block:ExternalAudio}
+											</div>
+											<div class="AUDIO_info_ta">
+												<div class="AUDIO_info_track">
+													<div class="AUDIO_info_none">Unknown</div>
+													{block:TrackName}<div class="AUDIO_info_overlay">{TrackName}</div>{/block:TrackName}
+												</div>
+												<div class="AUDIO_info_artist">
+													<div class="AUDIO_info_none">Unknown</div>
+													{block:Artist}<div class="AUDIO_info_overlay"><a href="http://last.fm/artist/{Artist}" target="_blank">{Artist}</a></div>{/block:Artist}
+												</div>
+											</div>
+											<div class="AUDIO_info_plays">
+												<div class="AUDIO_info_plays_count">{FormattedPlayCount}</div>
+												<div class="AUDIO_info_plays_label" style="text-transform:lowercase;">{lang:Plays}</div>
+											</div>
+										</div>
+									</div>
+									{block:Caption}{Caption}{/block:Caption}
+								{/block:Audio}
+								<!-- /AUDIO -->
+	
+	
+								<!-- QUOTE -->
+								{block:Quote}
+									<h1><span class="QUOTE_quotation">&rdquo;</span>{Quote}</h1>
+									{block:Source}<p>{Source}</p>{/block:Source}
+								{/block:Quote}
+								<!-- QUOTE -->
+	
+	
+								<!-- LINK -->
+								{block:Link}
+									<h1><a href="{URL}" {Target}>{Name}</a></h1>
+									{block:Description}{Description}{/block:Description}
+								{/block:Link}
+								<!-- /LINK -->
+	
+	
+								<!-- CHAT -->
+								{block:Chat}
+									{block:Title}<h1><a href="{Permalink}">{Title}</a></h1>{/block:Title}
+									<ul>
+										{block:Lines}
+										<li class="{Alt} {UserNumber}">
+											{block:Label}<strong>{Label}</strong> {/block:Label}{Line}
+										</li>
+										{/block:Lines}
+									</ul>
+								{/block:Chat}
+								<!-- /CHAT -->
+	
+	
+								<!-- ANSWER -->
+								{block:Answer}
+									<div class="ANSWER_question">
+										<h1><span>Q:</span> {Question}</h1>
+										<p>{lang: Asked by Asker}</p>
+									</div>
+									<hr />
+									<div class="ANSWER_answer">
+										<h3><span>A:</span> {Answer}</h3>
+									</div>
+								{/block:Answer}
+								<!-- ANSWER -->
+								
+								<div class="PST-posts-box-content-details">
+									<div class="PST-posts-box-content-details-upper">
+									
+										{block:Date}
+										<div class="PST-posts-box-content-timestamp">
+											<span class="PST-posts-box-content-details-icon"></span>
+											<p>{block:NotReblog}<a href="/day/{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}">{lang:Posted TimeAgo}</a>{/block:NotReblog}{block:Reblog}{lang:Reblogged TimeAgo from ReblogParentName 2}{/block:Reblog}{block:GroupMembers} by <a href="{PostAuthorURL}" target="_blank">{PostAuthorName}</a>{/block:GroupMembers}</p>
+										</div>
+										{/block:Date}
+										
+										{block:NoteCount}
+										<div class="PST-posts-box-content-notes">
+											<span class="PST-posts-box-content-details-icon"></span>
+											<p><a href="{Permalink}#notes">{NoteCountWithLabel}</a></p>
+										</div>
+										{/block:NoteCount}
+										
+										{block:IfDisqusShortname}
+										<div class="PST-posts-box-content-comments">
+											<span class="PST-posts-box-content-details-icon"></span>
+											<p><a href="{Permalink}#disqus_thread">{lang:Comments}</a></p>
+										</div>
+										{/block:IfDisqusShortname}
+	
+									</div>
+									
+									{block:HasTags}
+									<div class="PST-posts-box-content-tags">
+										<span class="PST-posts-box-content-details-icon"></span>
+										<p>{lang:Tags}: {block:Tags}<a href="{TagURLChrono}">{Tag}</a>, {/block:Tags}</p>
+									</div>
+									{/block:HasTags}
+	
+								</div>
+	
+							</div>
+						</div>
+						<div class="PST-posts-break"></div>
+					</li>
+					{/block:Posts}
+					
+					{block:Permalink}
+					
+						{block:PostNotes}
+						<li class="PST-posts-li NOTES" id="notes">
+							<div class="PST-posts-box">
+								<div class="PST-posts-box-side">
+									<div class="PST-posts-box-side-type"></div>
+								</div>
+								<div class="PST-posts-box-content">
+									{block:NoteCount}<h2>{NoteCountWithLabel}</h2>{/block:NoteCount}
+									{PostNotes}
+								</div>
+							</div>
+							<div class="PST-posts-break"></div>
+						</li>
+						{/block:PostNotes}
+
+						{block:IfDisqusShortname}
+						<li class="PST-posts-li COMMENTS">
+							<div class="PST-posts-box">
+								<div class="PST-posts-box-side">
+									<div class="PST-posts-box-side-type"></div>
+								</div>
+								<div class="PST-posts-box-content">
+									<script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>
+									<div id="disqus_thread"></div>
+									<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+								</div>
+							</div>
+							<div class="PST-posts-break"></div>
+						</li>
+						{/block:IfDisqusShortname}
+
+					{/block:Permalink}
+
+					<li class="PST-posts-li PST-posts-pagination">
+					
+						{block:Pagination}
+							{block:PreviousPage}
+							<div class="PST-posts-pagination-newer">
+								<a href="{PreviousPage}"></a>
+							</div>
+							{/block:PreviousPage}
+							{block:NextPage}
+							<div class="PST-posts-pagination-older">
+								<a href="{NextPage}"></a>
+							</div>
+							{/block:NextPage}
+						{/block:Pagination}
+						
+						{block:PermalinkPagination}
+							{block:NextPost}
+							<div class="PST-posts-pagination-newer">
+								<a href="{NextPost}"></a>
+							</div>
+							{/block:NextPost}
+							{block:PreviousPost}
+							<div class="PST-posts-pagination-older">
+								<a href="{PreviousPost}"></a>
+							</div>
+							{/block:PreviousPost}
+						{/block:PermalinkPagination}
+						
+						{block:DayPagination}
+							{block:NextDayPage}
+							<div class="PST-posts-pagination-newer">
+								<a href="{NextDayPage}"></a>
+							</div>
+							{/block:NextDayPage}
+							{block:PreviousDayPage}
+							<div class="PST-posts-pagination-older">
+								<a href="{PreviousDayPage}"></a>
+							</div>
+							{/block:PreviousDayPage}
+						{/block:DayPagination}
+
+					</li>
+
+				</ul>
+				
+				<div class="PST-sidebar">
+					
+					{block:IfShowPortrait}
+						<a class="PST-sidebar-box PST-portrait" href="/"><img alt="{Title}" src="{PortraitURL-128}" /></a>
+					{/block:IfShowPortrait}
+					
+					<script type="text/javascript">
+						function clearText(defaultText, theText, theID){
+							if(defaultText == theText){
+								document.getElementById(theID).value = "";
+							}
+						}
+
+						function fillText(defaultText, theText, theID){
+							if(theText == ""){
+								document.getElementById(theID).value = defaultText;
+							}
+						}
+					</script>
+					<form action="/search" class="PST-sidebar-box PST-search" method="get">
+						<input type="text" id="PST-search-input" name="q" value="Lost something in the post?*" onfocus="clearText('Lost something in the post?*', this.value, this.id);" onblur="fillText('Lost something in the post?*', this.value, this.id);" />
+					</form>
+				
+					{block:HasPages}
+						<h3>Pages</h3>
+						<ul class="PST-sidebar-box PAGES">
+							{block:Pages}
+								<li><a href="{URL}">{Label}</a></li>
+							{/block:Pages}
+						</ul>
+					{/block:HasPages}
+					
+					<ul class="PST-sidebar-box PST-sidebar-buttons">
+					
+						<li class="FOLLOW">
+							<a href="http://tumblr.com/follow/{Name}" target="_blank">
+								<em></em>
+								<span>
+									<strong class="FOLLOW-text">Follow On</strong>
+									<strong class="FOLLOW-logo"></strong>
+								</span>
+							</a>
+						</li>
+						
+						{block:AskEnabled}
+							<li class="PST-sidebar-box ASK-ME">
+								<a href="/ask">
+									<em></em>
+									<span>{AskLabel}</span>
+								</a>
+							</li>
+						{/block:AskEnabled}
+						
+						{block:SubmissionsEnabled}
+							<li class="PST-sidebar-box SUBMIT">
+								<a href="/submit">
+									<em></em>
+									<span>{SubmitLabel}</span>
+								</a>
+							</li>
+						{/block:SubmissionsEnabled}
+						
+					</ul>
+					
+					{block:IfShowGroupMembers}
+						{block:GroupMembers}
+							<div class="PST-sidebar-box MEMBERS">
+								<h3>{lang:Members}</h3>
+								<ul>
+									{block:GroupMember}
+									<li>
+										<a href="{GroupMemberURL}" target="_blank"><img alt="{GroupMemberName}" src="{GroupMemberPortraitURL-30}" /></a>
+										<span class="MEMBERS_name"><a href="{GroupMemberURL}" target="_blank">{GroupMemberName}</a></span>
+									</li>
+									{/block:GroupMember}
+								</ul>
+							</div>
+						{/block:GroupMembers}
+					{/block:IfShowGroupMembers}
+					
+					{block:IfShowTwitterFeed}
+						{block:Twitter}
+							<div id="twitter" class="PST-sidebar-box TWITTER" style="display:none;">
+								<h3><a href="http://twitter.com/{TwitterUsername}" target="_blank">Twitter</a></h3>
+								<div id="tweets"></div>
+								<div class="TWITTER_bird">
+									<a href="http://twitter.com/{TwitterUsername}" target="_blank"></a>
+								</div>
+							</div>
+							<script type="text/javascript">
+								function recent_tweets(data) {
+									for (i=0; i<data.length; i++) {
+										document.getElementById("tweets").innerHTML =
+											document.getElementById("tweets").innerHTML +
+											'<a href="http://twitter.com/{TwitterUsername}/status/' +
+											data[i].id + '"><div class="content">' + data[i].text +
+											'</div></a>';
+										}
+									document.getElementById("twitter").style.display = 'block';
+								}
+						    </script>
+						{/block:Twitter}
+					{/block:IfShowTwitterFeed}
+					
+					{block:IfLastFMUsername}
+						<div class="PST-sidebar-box LASTFM">
+							<h3><a href="http://last.fm/user/{text:LastFM Username}" target="_blank">Last.FM</a></h3>
+							<div class="LASTFM_widget">
+								<object type="application/x-shockwave-flash" data="http://cdn.last.fm/widgets/chart/19.swf" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" id="lfmEmbed_1477778791">
+									<param name="movie" value="http://cdn.last.fm/widgets/chart/19.swf" />
+									<param name="flashvars" value="type=recenttracks&amp;user={text:LastFM Username}&amp;theme=grey&amp;lang=en&amp;widget_id=chart_cca9d458ddd4608c8659b7a69b290a15" />
+									<param name="allowScriptAccess" value="always" />
+									<param name="allowNetworking" value="all" />
+									<param name="allowFullScreen" value="true" />
+									<param name="quality" value="high" />
+									<param name="bgcolor" value="transparent" />
+									<param name="wmode" value="transparent" />
+									<param name="menu" value="true" />
+								</object>
+							</div>
+						</div>
+					{/block:IfLastFMUsername}
+					
+					{block:IfShowLikes}
+						{block:Likes}
+							<div class="PST-sidebar-box LIKES">
+								<h3><a href="/liked/by/{Username}" target="_blank">{lang:Likes}</a></h3>
+								{Likes limit="5" summarize="100" width="180"}
+							</div>
+				        {/block:Likes}
+			        {/block:IfShowLikes}
+			        
+					{block:IfShowPeopleIFollow}
+						{block:Following}
+							<div class="PST-sidebar-box FOLLOWING">
+								<h3>{lang:Following}</h3>
+								<ul>
+									{block:Followed}
+									<li>
+										<a href="{FollowedURL}" target="_blank">
+											<img alt="{FollowedName}" src="{FollowedPortraitURL-40}" />
+										</a>
+									</li>
+									{/block:Followed}
+								</ul>
+							</div>
+						{/block:Following}
+					{/block:IfShowPeopleIFollow}
+
+				</div>
+
+			</div>
+
+			<div class="PST-footer">
+				<div class="PST-footer-info">
+					<a id="PST-footer-info-powered" href="http://tumblr.com" target="_blank"></a>
+					<div class="PST-footer-info-text">
+						<p class="PST-footer-info-text-notices">&copy;{CopyrightYears}. <a href="http://www.tumblr.com/theme/6177" target="_blank">Postage</a> by <a href="http://gre.gs" target="_blank">Greg Cooper</a>. Icons by <a href="http://pixelresort.com/" target="_blank">PixelResort</a>. Thanks to <a href="http://jamiecassidy.co.uk/" target="_blank">Jamie Cassidy</a> &amp; <a href="http://panic.com" target="_blank">Panic</a>.</p>
+						<p class="PST-footer-info-text-search">*Unlikely to find your lost post using this but you can try...</p>
+					</div>
+				</div>
+				<ul class="PST-footer-actions">
+					<li class="PST-footer-actions-rss">
+						<a href="{RSS}"></a>
+					</li>
+					<li class="PST-footer-actions-random">
+						<a href="/random"></a>
+					</li>
+					<li class="PST-footer-actions-archive">
+						<a href="/archive"></a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		{block:IfShowTwitterFeed}
+			{block:Twitter}
+				<script type="text/javascript" src="/tweets.js"></script>
+			{/block:Twitter}
+		{/block:IfShowTwitterFeed}
+		
+		{block:IfDisqusShortname}
+			<script type="text/javascript">
+			//<![CDATA[
+			(function() {
+					var links = document.getElementsByTagName('a');
+					var query = '?';
+					for(var i = 0; i < links.length; i++) {
+						if(links[i].href.indexOf('#disqus_thread') >= 0) {
+							query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+						}
+					}
+					document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
+				})();
+			//]]>
+			</script>
+		{/block:IfDisqusShortname}
+		
+		{block:IfGoogleAnalyticsUACode}
+			<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+				try {
+				var pageTracker = _gat._getTracker("{text:Google Analytics UA Code}");
+				pageTracker._trackPageview();
+				} catch(err) {}
+			</script>
+		{/block:IfGoogleAnalyticsUACode}
+
+	</body>
+</html>

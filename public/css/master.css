@@ -132,13 +132,9 @@ a {
 
 #profile_picture_column {
   float: right;
-  width: 148px;
+  width: 175px;
   text-align: center; }
   #profile_picture_column #profile_picture {
-    padding: 6px;
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 1px 4px #222;
     margin-bottom: 15px;
     margin-top: 7px; }
   #profile_picture_column #askme_wrapper {
