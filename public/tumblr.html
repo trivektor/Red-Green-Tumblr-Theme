@@ -72,6 +72,17 @@
                   {/block:Title}
                   
                   {Body}
+                  
+                  {block:HasTags}
+                    <div class="tags_section">
+                        <div class="tags_list">
+                            {block:Tags}
+                                <a class="tag" href="{TagURL}">{Tag}</a>
+                            {/block:Tags}
+                        </div>
+                    </div>
+                  {/block:HasTags}
+                  
                 </div>
               </div>
               <div class='separator'>
@@ -92,7 +103,9 @@
       <div id='profile_picture_column'>
         <img id="profile_picture" src="{PortraitURL-128}">
         {block:AskEnabled}
-            <a href="/ask" id='askme'>{AskLabel}</a>
+            <span id="askme_wrapper">
+                <a href="/ask" id='askme'>{AskLabel}</a>
+            </span>
         {/block:AskEnabled}
       </div>
       <div class='clearfloat'></div>

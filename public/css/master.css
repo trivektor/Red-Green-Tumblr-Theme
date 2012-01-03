@@ -4,9 +4,11 @@
 
 body {
   font-family: Georgia;
+  font-family: 'Marmelad', sans-serif;
   font-size: 12px;
   background: url(/images/bg.jpg) top center repeat-y;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  color: #444; }
 
 ul {
   list-style: none; }
@@ -57,9 +59,7 @@ a {
     color: #ffe8cc;
     margin-left: 37px;
     margin-top: 12px;
-    font-size: 14px;
     border: 0;
-    font-family: georgia;
     width: 156px;
     outline: none;
     outline-style: none; }
@@ -127,7 +127,7 @@ a {
         margin-bottom: 20px; }
       #entries_column .entry .content p {
         margin: 15px 0;
-        line-height: 20px; }
+        line-height: 22px; }
 
 #profile_picture_column {
   float: right;
