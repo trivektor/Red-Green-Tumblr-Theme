@@ -7,7 +7,7 @@ body {
   font-family:Georgia;
   font-family: 'Marmelad', sans-serif;
   font-size:12px;
-  background:url(/images/bg.jpg) top center repeat-y;
+  background:url(/images/bg.jpg) top center repeat;
   padding-bottom:30px;
   color:#444;
 }
@@ -165,7 +165,7 @@ a {
   
   #profile_picture {
     margin-bottom:15px;
-    margin-top:7px;
+    margin-top:6px;
   }
   
   #askme_wrapper {
@@ -189,7 +189,7 @@ a {
   width:100%;
   border-top:1px dashed #bbb;
   text-align:center;
-  margin:50px 0;
+  margin:50px 0 40px;
   .scissor {
     position:relative;
     top:-8px;
@@ -247,7 +247,6 @@ a {
     text-shadow:0 1px 1px #111;
     height:36px;
     line-height:36px;
-    font-size:14px;
     
     a { color: #ffad1e }
   }

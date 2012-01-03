@@ -65,59 +65,60 @@
 
         <div class='top'></div>
         <div class='middle'>
-        
           {block:Posts}
-            {block:Text}
-              <div class='entry'>
-                <div class='calendar'>
-                  <div class='month'>{ShortMonth}</div>
-                  <div class='day'>{DayOfMonthWithZero}</div>
-                </div>
-                <div class='content'>
-                  
+          
+            <div class="entry">
+              <div class="calendar">
+                <div class="month">{ShortMonth}</div>
+                <div class="day">{DayOfMonthWithZero}</div>
+              </div>
+              <div class="content">
+                {block:Text}
                   {block:Title}
                     <a class='title' href="{Permalink}">{Title}</a>
                   {/block:Title}
-                  
                   {Body}
-                  
-                  {block:HasTags}
-                    <div class="tags_section">
-                        <div class="tags_list">
-                            {block:Tags}
-                                <a class="tag" href="{TagURL}">{Tag}</a>
-                            {/block:Tags}
-                        </div>
-                    </div>
-                  {/block:HasTags}
-                  
-                </div>
+                {/block:Text}
+                
+                {block:HasTags}
+                  <div class="tags_section">
+                      <div class="tags_list">
+                          {block:Tags}
+                              <a class="tag" href="{TagURL}">{Tag}</a>
+                          {/block:Tags}
+                      </div>
+                  </div>
+                {/block:HasTags}
+            
+                {block:Link}
+                  <a class="title" href="{URL}" {Target}>{Name}</a>
+                  {block:Description}{Description}{/block:Description}
+                {/block:Link}
+                
               </div>
-              <div class='separator'>
-                <img class="scissor" src="http://red-green-tumblr.heroku.com//images/scissor.png">
+              <div class="separator">
+                <img src="http://red-green-tumblr.heroku.com/images/scissor.png" class="scissor" />
               </div>
-            {/block:Text}
-         {/block:Posts}
+              
+            </div>
+          {/block:Posts}
          
          
-         {block:SearchPage}
+          {block:SearchPage}
             {block:SearchResults}
-				<h3>{lang:Found SearchResultCount results for SearchQuery 2}</h3>
-			{/block:SearchResults}
+              <h3>{lang:Found SearchResultCount results for SearchQuery 2}</h3>
+			      {/block:SearchResults}
             
             {block:NoSearchResults}
-			    <h3>{lang:No search results for SearchQuery 2}</h3>
-			{/block:NoSearchResults}
-
-         {/block:SearchPage}
+			        <h3>{lang:No search results for SearchQuery 2}</h3>
+			      {/block:NoSearchResults}
+			    {/block:SearchPage}
          
         </div>
-         
-
         <div class='bottom'></div>
       </div>
       <div id='profile_picture_column'>
-        <img id="profile_picture" src="{PortraitURL-128}">
+        <img id="profile_picture" src="http://red-green-tumblr.heroku.com/images/tri_polaroid.png" />
         {block:AskEnabled}
             <span id="askme_wrapper">
                 <a href="/ask" id='askme'>{AskLabel}</a>
