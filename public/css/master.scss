@@ -191,10 +191,48 @@ a {
   width:100%;
   border-top:1px dashed #bbb;
   text-align:center;
-  margin:40px 0;
+  margin:50px 0;
   .scissor {
     position:relative;
     top:-8px;
+  }
+}
+
+.tags_section {
+  margin-top:35px; overflow:hidden;
+  h3 { color:#ed7248; font-weight:normal; margin-bottom:10px; font-size:16px; float:left; margin-right:15px }
+  .tags_list {
+    float:left; 
+    .tag { 
+      float:left;
+      background:url(/images/tag_bg.png) repeat-x #94c626 left bottom; 
+      padding:3px 7px 5px; 
+      border-radius:4px;
+      border:1px solid #48580a;
+      color:#fff;
+      display:inline-block;
+      text-shadow:0 1px 1px #222;
+      box-shadow:0 1px 0 #f0ffd2 inset;
+      margin-right:10px;
+      margin-bottom:10px;
+    }
+  }
+}
+
+.pagination {
+  margin:30px auto;
+  text-align:center;
+  .next, .prev { 
+    background:#539a2c;
+    box-shadow:0 1px 1px #affa85 inset;
+    border:1px solid #18310b;
+    text-shadow:0 1px 1px #111;
+    font-size:13px;
+    border-radius:4px;
+    padding:4px 8px;
+    color:#fff;
+    margin:0 12px;
+    text-transform:uppercase;
   }
 }
 
@@ -216,22 +254,5 @@ a {
     font-size:14px;
     
     a { color: #ffad1e }
-  }
-}
-
-.pagination {
-  margin:30px auto;
-  text-align:center;
-  .next, .prev { 
-    background:#539a2c;
-    box-shadow:0 1px 1px #affa85 inset;
-    border:1px solid #18310b;
-    text-shadow:0 1px 1px #111;
-    font-size:13px;
-    border-radius:4px;
-    padding:4px 8px;
-    color:#fff;
-    margin:0 12px;
-    text-transform:uppercase;
   }
 }
