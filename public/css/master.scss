@@ -67,8 +67,10 @@ a {
     margin-top:12px;
     font-size:14px;
     border:0;
-    font-family:inherit;
+    font-family:georgia;
     width:156px;
+    outline:none;
+    outline-style:none;
   }
 }
 
@@ -119,7 +121,7 @@ a {
   }
   .bottom {
     background:url(/images/entry_col_bottom_bg.png) no-repeat;
-    padding-bottom:55px;
+    padding-bottom:73px;
   }
   .entry {
     overflow:hidden;
@@ -166,6 +168,10 @@ a {
     box-shadow:0 1px 4px #222;
     margin-bottom:15px;
     margin-top:7px;
+  }
+  
+  #askme_wrapper {
+    box-shadow:0px 9px 8px -2px #111;
   }
   
   #askme {

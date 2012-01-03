@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>{Title}</title>
+    {block:Description}
+        <meta name="description" content="{MetaDescription}" />
+    {/block:Description}
+    <link charset="utf-8" href="http://red-green-tumblr.heroku.com//css/master.css" media="screen" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id='thin_strip'></div>
+    <header id='header'>
+
+      <div class='inner'>
+        <ul id='social_networks'>
+          <li>
+            <a href='http://twitter.com/trivektor'>
+              <img id="twitter" src="http://red-green-tumblr.heroku.com//images/twitter_social.png">
+            </a>
+          </li>
+          <li>
+            <a href='http://facebook.com/trivuong'>
+
+              <img id="facebook" src="http://red-green-tumblr.heroku.com//images/facebook_social.png">
+            </a>
+          </li>
+          <li>
+            <a href='http://github.com/trivektor'>
+              <img id="github" src="http://red-green-tumblr.heroku.com//images/github_social.png">
+            </a>
+          </li>
+        </ul>
+
+        <div id='search_box'>
+            <form action="/search" method="get">
+          <input id='search' placeholder='Looking for something?' type='text' name="q" value="{SearchQuery}" />
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class='blog_title_wrapper'>
+      <div class='blog_title'>
+        <div class='left'>
+          <div class='right'>
+
+            <h1 class='title'>
+                <a href="/" style="color:#fff !important">
+                Tri Vuong's blog (mostly rants)
+                </a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='main_content'>
+      <div id='entries_column'>
+
+        <div class='top'></div>
+        <div class='middle'>
+        
+          {block:Posts}
+            {block:Text}
+              <div class='entry'>
+                <div class='calendar'>
+                  <div class='month'>{ShortMonth}</div>
+                  <div class='day'>{DayOfMonthWithZero}</div>
+                </div>
+                <div class='content'>
+                  
+                  {block:Title}
+                    <a class='title' href="{Permalink}">{Title}</a>
+                  {/block:Title}
+                  
+                  {Body}
+                </div>
+              </div>
+              <div class='separator'>
+                <img class="scissor" src="http://red-green-tumblr.heroku.com//images/scissor.png">
+              </div>
+            {/block:Text}
+         {/block:Posts}
+         
+         {block:SearchPage}
+            
+         {/block:SearchPage}
+         
+        </div>
+         
+
+        <div class='bottom'></div>
+      </div>
+      <div id='profile_picture_column'>
+        <img id="profile_picture" src="{PortraitURL-128}">
+        {block:AskEnabled}
+            <a href="/ask" id='askme'>{AskLabel}</a>
+        {/block:AskEnabled}
+      </div>
+      <div class='clearfloat'></div>
+      
+      {block:Pagination}
+        <div class='pagination'>
+          {block:PreviousPage}
+            <a class='prev' href="{PreviousPage}">Prev</a>
+          {/block:PreviousPage}
+          
+          {block:NextPage}
+            <a class='next' href="{NextPage}">Next</a>
+          {/block:NextPage}
+          <div class='clearfloat'></div>
+        </div>
+      {/block:Pagination}
+    </div>
+  </body>
+  <footer id='footer'>
+    <a href='' id='powered'>
+
+      <img src="http://red-green-tumblr.heroku.com//images/powered.png">
+    </a>
+    <div id='copyright'>
+      &copy; 2012. Red Green Tumblr by
+      <a href='http://trivuong.com'>Tri Vuong.</a>
+      Icons by
+      <a href='http://www.piwidesign.de'>Philipp Walter</a>.
+      Background by 
+      <a href='http://awesomewallpapersblog.com/'>Awesome Wallpapers</a>
+    </div>
+
+    <div class='clearfloat'></div>
+  </footer>
+</html>

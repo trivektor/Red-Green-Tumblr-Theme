@@ -19,7 +19,8 @@
                 .month Jan
                 .day= "0#{i}"
               .content
-                .title Simple programming rules I like
+                .title
+                  %a{:href => "#"} Simple programming rules I like
                 %p It was while reading this post that I found a comment by Patrick Balleux which I really like and want to share with everyone
                 %p "Good coding style is often limited by the language and the time allowed to solve the problem.
                 %p Bad code is often generated with short dead lines and by dreamers. When I say “dreamers”, I’m thinking about those trying to prove the world that they can create an amazing new framework where their code will solve everything.
@@ -47,7 +48,8 @@
         
       #profile_picture_column
         = image_tag "images/me.jpg", :id => :profile_picture
-        %span#askme Ask me anything
+        %span#askme_wrapper
+          %span#askme Ask me anything
         
       .clearfloat
       

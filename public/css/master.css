@@ -59,8 +59,10 @@ a {
     margin-top: 12px;
     font-size: 14px;
     border: 0;
-    font-family: inherit;
-    width: 156px; }
+    font-family: georgia;
+    width: 156px;
+    outline: none;
+    outline-style: none; }
 
 .blog_title_wrapper {
   width: 844px;
@@ -101,7 +103,7 @@ a {
     padding: 1px 50px; }
   #entries_column .bottom {
     background: url(/images/entry_col_bottom_bg.png) no-repeat;
-    padding-bottom: 55px; }
+    padding-bottom: 73px; }
   #entries_column .entry {
     overflow: hidden; }
     #entries_column .entry .calendar {
@@ -138,6 +140,8 @@ a {
     box-shadow: 0 1px 4px #222;
     margin-bottom: 15px;
     margin-top: 7px; }
+  #profile_picture_column #askme_wrapper {
+    box-shadow: 0px 9px 8px -2px #111111; }
   #profile_picture_column #askme {
     background: url(/images/ask_bg.jpg) repeat-x left bottom #54b0ff;
     padding: 5px 25px;
