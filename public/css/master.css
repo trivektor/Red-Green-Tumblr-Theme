@@ -144,17 +144,21 @@ input::-webkit-input-placeholder {
   overflow: hidden; }
   .conversation li {
     margin-bottom: 14px;
-    box-shadow: 0 1px 1px 1px #222; }
+    box-shadow: 0 3px 4px -2px #666666;
+    border-radius: 4px;
+    clear: both; }
   .conversation .odd .inner, .conversation .even .inner {
     padding: 3px 10px;
     border-radius: 4px;
     color: #fff; }
   .conversation .odd {
     float: left;
+    box-shadow: 0 1px 1px #f0ffd2;
     background: url(/images/chat_green.png) repeat-x bottom left #94c626;
     border: 1px solid #48580a; }
   .conversation .even {
     float: right;
+    box-shadow: 0 1px 1px #eaf4ff;
     background: url(/images/chat_blue.png) repeat-x bottom left #339dfb;
     border: 1px solid #0d3a64; }
 
