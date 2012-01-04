@@ -158,6 +158,12 @@ input::-webkit-input-placeholder {
     #entries_column .entry .content p {
       margin: 15px 0;
       line-height: 22px; }
+    #entries_column .entry .content img {
+      padding: 4px;
+      border-radius: 3px;
+      background: #eee;
+      border: 1px solid #ccc;
+      box-shadow: 0 3px 5px -3px #555555; }
 
 .conversation {
   overflow: hidden; }
@@ -182,15 +188,6 @@ input::-webkit-input-placeholder {
     box-shadow: 0 1px 0 #eaf4ff inset;
     background: url(/images/chat_blue.png) repeat-x bottom left #3da6ff;
     border: 1px solid #0d3a64; }
-
-.photo_wrapper {
-  padding: 4px;
-  border-radius: 3px;
-  background: #eee;
-  border: 1px solid #ccc;
-  box-shadow: 0 3px 5px -3px #555555; }
-  .photo_wrapper img {
-    width: 100%; }
 
 ol.notes li {
   list-style: none;

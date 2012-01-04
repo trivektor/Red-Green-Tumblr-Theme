@@ -186,6 +186,13 @@ input::-webkit-input-placeholder { color:#FFE8CC }
         margin:15px 0;
         line-height:22px;
       }
+      img {
+        padding:4px;
+        border-radius:3px;
+        background:#eee;
+        border:1px solid #ccc;
+        box-shadow:0 3px 5px -3px #555;
+      }
     }
   }
 }
@@ -212,15 +219,6 @@ input::-webkit-input-placeholder { color:#FFE8CC }
     border:1px solid #0d3a64;
   } 
 }
-
-.photo_wrapper {
-  padding:4px;
-  border-radius:3px;
-  background:#eee;
-  border:1px solid #ccc;
-  box-shadow:0 3px 5px -3px #555;
-  img { width:100%; }
-} 
 
 ol.notes {
   li {
