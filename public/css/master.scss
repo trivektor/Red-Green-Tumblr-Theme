@@ -12,7 +12,7 @@ body {
   color:#444;
 }
 
-ul {
+ul, ol {
   list-style:none;
 }
 
@@ -212,6 +212,12 @@ input::-webkit-input-placeholder { color:#FFE8CC }
     border:1px solid #ccc;
   }
   img { width:100%; }
+
+ol.notes {
+  li {
+    list-style:none;
+    margin-bottom:5px;
+  }
 }
 
 #profile_picture_column {
