@@ -140,6 +140,19 @@ input::-webkit-input-placeholder {
         margin: 15px 0;
         line-height: 22px; }
 
+.conversation li {
+  margin-bottom: 14px; }
+.conversation .odd, .conversation .even {
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #fff; }
+.conversation .odd {
+  background: url(/images/chat_green.png) repeat-x top left #94c626;
+  border: 1px solid #48580a; }
+.conversation .even {
+  background: url(/images/chat_blue.png) repeat-x top left #339dfb;
+  border: 1px solid #0d3a64; }
+
 #profile_picture_column {
   float: right;
   width: 175px;
