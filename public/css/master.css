@@ -24,6 +24,14 @@ input::-webkit-input-placeholder {
 .clearfloat {
   clear: both; }
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
 #thin_strip {
   background: url(/images/thin_strip.png) repeat-x;
   height: 2px; }
@@ -109,49 +117,47 @@ input::-webkit-input-placeholder {
   #entries_column .bottom {
     background: url(/images/entry_col_bottom_bg.png) no-repeat;
     padding-bottom: 73px; }
-  #entries_column .entry {
-    overflow: hidden; }
-    #entries_column .entry .west {
-      float: left;
-      width: 54px; }
-    #entries_column .entry .calendar {
-      width: 54px;
-      height: 64px;
-      padding-top: 4px;
-      text-align: center;
-      background: url(/images/calendar.png) no-repeat; }
-      #entries_column .entry .calendar .month {
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 10px; }
-      #entries_column .entry .calendar .day {
-        padding: 4px;
-        font-size: 28px; }
-    #entries_column .entry .type {
-      width: 16px;
-      margin: 10px auto 0;
-      display: block; }
-    #entries_column .entry .note_count {
-      display: block;
-      background: #55a1d5;
+  #entries_column .entry .west {
+    float: left;
+    width: 54px; }
+  #entries_column .entry .calendar {
+    width: 54px;
+    height: 64px;
+    padding-top: 4px;
+    text-align: center;
+    background: url(/images/calendar.png) no-repeat; }
+    #entries_column .entry .calendar .month {
       color: #fff;
-      text-align: center;
-      border-radius: 20px;
-      margin-top: 10px;
-      text-shadow: 0 1px 1px #444;
-      box-shadow: 0 1px 0 #eaf4ff inset;
-      background: url(/images/chat_blue.png) repeat-x bottom left #3da6ff;
-      border: 1px solid #0d3a64;
-      font-size: 10px;
-      padding: 1px 0; }
-    #entries_column .entry .content {
-      margin-left: 93px; }
-      #entries_column .entry .content .title {
-        font-size: 22px;
-        margin-bottom: 20px; }
-      #entries_column .entry .content p {
-        margin: 15px 0;
-        line-height: 22px; }
+      text-transform: uppercase;
+      font-size: 10px; }
+    #entries_column .entry .calendar .day {
+      padding: 4px;
+      font-size: 28px; }
+  #entries_column .entry .type {
+    width: 16px;
+    margin: 10px auto 0;
+    display: block; }
+  #entries_column .entry .note_count {
+    display: block;
+    background: #55a1d5;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-shadow: 0 1px 1px #444;
+    box-shadow: 0 1px 0 #eaf4ff inset;
+    background: url(/images/chat_blue.png) repeat-x bottom left #3da6ff;
+    border: 1px solid #0d3a64;
+    font-size: 10px;
+    padding: 1px 0; }
+  #entries_column .entry .content {
+    margin-left: 93px; }
+    #entries_column .entry .content .title {
+      font-size: 22px;
+      margin-bottom: 20px; }
+    #entries_column .entry .content p {
+      margin: 15px 0;
+      line-height: 22px; }
 
 .conversation {
   overflow: hidden; }
@@ -178,9 +184,11 @@ input::-webkit-input-placeholder {
     border: 1px solid #0d3a64; }
 
 .photo_display .photo_wrapper {
-  padding: 3px;
+  padding: 4px;
+  border-radius: 3px;
   background: #eee;
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 5px -3px #555555; }
 .photo_display img {
   width: 100%; }
 

@@ -28,6 +28,15 @@ input::-webkit-input-placeholder { color:#FFE8CC }
   clear:both;
 }
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; 
+}
+
 #thin_strip {
   background:url(/images/thin_strip.png) repeat-x;
   height:2px;
@@ -128,7 +137,6 @@ input::-webkit-input-placeholder { color:#FFE8CC }
     padding-bottom:73px;
   }
   .entry {
-    overflow:hidden;
     .west {
       float:left;
       width:54px;
@@ -207,9 +215,11 @@ input::-webkit-input-placeholder { color:#FFE8CC }
 
 .photo_display {
   .photo_wrapper {
-    padding:3px;
+    padding:4px;
+    border-radius:3px;
     background:#eee;
     border:1px solid #ccc;
+    box-shadow:0 3px 5px -3px #555;
   }
   img { width:100%; }
 }
