@@ -205,6 +205,15 @@ input::-webkit-input-placeholder { color:#FFE8CC }
   } 
 }
 
+.photo_display {
+  .photo_wrapper {
+    padding:3px;
+    background:#eee;
+    border:1px solid #ccc;
+  }
+  img { width:100%; }
+}
+
 #profile_picture_column {
   float:right;
   width:175px;

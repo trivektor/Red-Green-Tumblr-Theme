@@ -73,6 +73,11 @@
                         <div class="month">{ShortMonth}</div>
                         <div class="day">{DayOfMonthWithZero}</div>
                     </div>
+                    
+                    {block:NoteCount}
+    				    <a class="note_count" href="{Permalink}#notes">{NoteCountWithLabel}</a>
+					{/block:NoteCount}
+
                 </div>
               <div class="content">
                 
@@ -88,12 +93,13 @@
                 <!-- PHOTO -->
     							{block:Photo}
 									<div class="photo_display">
-										{block:HighRes}<a class="photo_highres" href="{PhotoURL-HighRes}"></a>{/block:HighRes}
+                                        <div class="photo_wrapper">
 										{LinkOpenTag}<img alt="{PhotoAlt}" src="{PhotoURL-500}" />{LinkCloseTag}
+                                        </div>
 									</div>
-									<p class="photo_caption">
+									<div class="photo_caption">
 									  {block:Caption}{Caption}{/block:Caption}
-									</p>
+									</div>
 								{/block:Photo}
 								<!-- /PHOTO -->
 								
@@ -210,6 +216,38 @@
               
             </div>
           {/block:Posts}
+          
+          {block:Permalink}
+					
+						{block:PostNotes}
+							<div class="PST-posts-box">
+								<div class="PST-posts-box-side">
+									<div class="PST-posts-box-side-type"></div>
+								</div>
+								<div class="PST-posts-box-content">
+									{block:NoteCount}<h2>{NoteCountWithLabel}</h2>{/block:NoteCount}
+									{PostNotes}
+								</div>
+							</div>
+							<div class="PST-posts-break"></div>
+						{/block:PostNotes}
+
+						{block:IfDisqusShortname}
+							<div class="PST-posts-box">
+								<div class="PST-posts-box-side">
+									<div class="PST-posts-box-side-type"></div>
+								</div>
+								<div class="PST-posts-box-content">
+									<script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>
+									<div id="disqus_thread"></div>
+									<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+								</div>
+							</div>
+							<div class="PST-posts-break"></div>
+						{/block:IfDisqusShortname}
+
+					{/block:Permalink}
+					
          
          
           {block:SearchPage}
