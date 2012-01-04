@@ -68,10 +68,12 @@
           {block:Posts}
           
             <div class="entry">
-              <div class="calendar">
-                <div class="month">{ShortMonth}</div>
-                <div class="day">{DayOfMonthWithZero}</div>
-              </div>
+                <div class="west">
+                    <div class="calendar">
+                        <div class="month">{ShortMonth}</div>
+                        <div class="day">{DayOfMonthWithZero}</div>
+                    </div>
+                </div>
               <div class="content">
                 
                 <!-- TEXT -->
@@ -84,7 +86,7 @@
                 <!-- /TEXT -->
                 
                 <!-- PHOTO -->
-								{block:Photo}
+    							{block:Photo}
 									<div class="photo_display">
 										{block:HighRes}<a class="photo_highres" href="{PhotoURL-HighRes}"></a>{/block:HighRes}
 										{LinkOpenTag}<img alt="{PhotoAlt}" src="{PhotoURL-500}" />{LinkCloseTag}
@@ -178,10 +180,12 @@
                 <!-- CHAT -->
 								{block:Chat}
 									{block:Title}<h1><a href="{Permalink}">{Title}</a></h1>{/block:Title}
-									<ul>
+									<ul class="conversation">
 										{block:Lines}
-										<li class="{Alt} {UserNumber}">
-											{block:Label}<strong>{Label}</strong> {/block:Label}{Line}
+										<li>
+                                            <div class="inner {Alt}">
+											    {block:Label}<strong>{Label}</strong> {/block:Label}{Line}
+                                            </div>
 										</li>
 										{/block:Lines}
 									</ul>

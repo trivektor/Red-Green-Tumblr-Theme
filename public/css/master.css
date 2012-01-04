@@ -161,7 +161,7 @@ input::-webkit-input-placeholder {
   .conversation .even {
     float: right;
     box-shadow: 0 1px 0 #eaf4ff inset;
-    background: url(/images/chat_blue.png) repeat-x bottom left #339dfb;
+    background: url(/images/chat_blue.png) repeat-x bottom left #3da6ff;
     border: 1px solid #0d3a64; }
 
 #profile_picture_column {
