@@ -131,6 +131,13 @@ input::-webkit-input-placeholder {
       width: 16px;
       margin: 10px auto 0;
       display: block; }
+    #entries_column .entry .note_count {
+      display: block;
+      background: #55a1d5;
+      color: #fff;
+      text-align: center;
+      border: 20px;
+      margin-top: 10px; }
     #entries_column .entry .content {
       margin-left: 93px; }
       #entries_column .entry .content .title {
