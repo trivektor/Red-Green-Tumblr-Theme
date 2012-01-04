@@ -143,8 +143,9 @@ input::-webkit-input-placeholder {
 .conversation {
   overflow: hidden; }
   .conversation li {
-    margin-bottom: 14px; }
-  .conversation .odd, .conversation .even {
+    margin-bottom: 14px;
+    box-shadow: 0 1px 1px 1px #222; }
+  .conversation .odd .inner, .conversation .even .inner {
     padding: 3px 10px;
     border-radius: 4px;
     color: #fff; }

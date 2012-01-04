@@ -170,11 +170,13 @@ input::-webkit-input-placeholder { color:#FFE8CC }
 
 .conversation {
   overflow:hidden;
-  li { margin-bottom:14px }
+  li { margin-bottom:14px; box-shadow:0 1px 1px 1px #222 }
   .odd, .even {
-    padding:3px 10px;
-    border-radius:4px;
-    color:#fff;
+    .inner {
+      padding:3px 10px;
+      border-radius:4px;
+      color:#fff;
+    }
   }
   .odd {
     float:left;
