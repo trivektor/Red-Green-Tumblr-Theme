@@ -95,12 +95,98 @@
 								{/block:Photo}
 								<!-- /PHOTO -->
 								
-                
+								<!-- PHOTOSET -->
+								{block:Photoset}
+									{Photoset-500}
+									{block:Caption}{Caption}{/block:Caption}
+								{/block:Photoset}
+								<!-- /PHOTOSET -->
+								
+								<!-- VIDEO -->
+								{block:Video}
+									{Video-500}
+									{block:Caption}{Caption}{/block:Caption}
+								{/block:Video}
+								<!-- /VIDEO -->
+								
+								<!-- AUDIO -->
+								{block:Audio}
+									<div class="AUDIO_info">
+										<div class="AUDIO_info_album">
+											<div class="AUDIO_info_album_overlay"></div>
+											{block:AlbumArt}<img  alt="" src="{AlbumArtURL}" />{/block:AlbumArt}
+											<div class="AUDIO_info_album_none"></div>
+										</div>
+										<div class="AUDIO_info_float">
+											<div class="AUDIO_info_player">
+												<div class="AUDIO_info_player_embed">
+													{AudioPlayerGrey}
+												</div>
+												{block:ExternalAudio}
+												<div class="AUDIO_info_player_download">
+													<a href="{ExternalAudioURL}" target="_blank"></a>
+												</div>
+												{/block:ExternalAudio}
+											</div>
+											<div class="AUDIO_info_ta">
+												<div class="AUDIO_info_track">
+													<div class="AUDIO_info_none">Unknown</div>
+													{block:TrackName}<div class="AUDIO_info_overlay">{TrackName}</div>{/block:TrackName}
+												</div>
+												<div class="AUDIO_info_artist">
+													<div class="AUDIO_info_none">Unknown</div>
+													{block:Artist}<div class="AUDIO_info_overlay"><a href="http://last.fm/artist/{Artist}" target="_blank">{Artist}</a></div>{/block:Artist}
+												</div>
+											</div>
+											<div class="AUDIO_info_plays">
+												<div class="AUDIO_info_plays_count">{FormattedPlayCount}</div>
+												<div class="AUDIO_info_plays_label" style="text-transform:lowercase;">{lang:Plays}</div>
+											</div>
+										</div>
+									</div>
+									{block:Caption}{Caption}{/block:Caption}
+								{/block:Audio}
+								<!-- /AUDIO -->
+								
+								<!-- QUOTE -->
+								{block:Quote}
+                  <p class="quote">{Quote}</p>
+									{block:Source}<div class="quote_source">{Source}</div>{/block:Source}
+								{/block:Quote}
+								<!-- QUOTE -->
+								
+								<!-- ANSWER -->
+								{block:Answer}
+									<div class="ANSWER_question">
+										<h1><span>Q:</span> {Question}</h1>
+										<p>{lang: Asked by Asker}</p>
+									</div>
+									<hr />
+									<div class="ANSWER_answer">
+										<h3><span>A:</span> {Answer}</h3>
+									</div>
+								{/block:Answer}
+								<!-- ANSWER -->
+								
+                <!-- LINK -->
                 {block:Link}
                   <a class="title" href="{URL}" {Target}>{Name}</a>
                   {block:Description}{Description}{/block:Description}
                 {/block:Link}
+                <!-- /LINK -->
                 
+                <!-- CHAT -->
+								{block:Chat}
+									{block:Title}<h1><a href="{Permalink}">{Title}</a></h1>{/block:Title}
+									<ul>
+										{block:Lines}
+										<li class="{Alt} {UserNumber}">
+											{block:Label}<strong>{Label}</strong> {/block:Label}{Line}
+										</li>
+										{/block:Lines}
+									</ul>
+								{/block:Chat}
+								<!-- /CHAT -->
                 
                 {block:HasTags}
                   <div class="tags_section">
