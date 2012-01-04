@@ -12,7 +12,7 @@ body {
   color:#444;
 }
 
-ul {
+ul, ol {
   list-style:none;
 }
 
@@ -203,6 +203,13 @@ input::-webkit-input-placeholder { color:#FFE8CC }
     background:url(/images/chat_blue.png) repeat-x bottom left #3da6ff;
     border:1px solid #0d3a64;
   } 
+}
+
+ol.notes {
+  li {
+    list-style:none;
+    margin-bottom:5px;
+  }
 }
 
 #profile_picture_column {
