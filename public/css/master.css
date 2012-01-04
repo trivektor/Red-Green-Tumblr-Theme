@@ -87,7 +87,8 @@ input::-webkit-input-placeholder {
       height: 67px;
       padding: 0 12px; }
       .blog_title_wrapper .blog_title .title a {
-        color: white; }
+        color: #fff;
+        font-weight: normal; }
     .blog_title_wrapper .blog_title .right {
       background: url(/images/blog_title_right.png) no-repeat bottom right;
       padding-right: 15px; }

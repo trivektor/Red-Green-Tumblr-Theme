@@ -73,12 +73,34 @@
                 <div class="day">{DayOfMonthWithZero}</div>
               </div>
               <div class="content">
+                
+                <!-- TEXT -->
                 {block:Text}
                   {block:Title}
                     <a class='title' href="{Permalink}">{Title}</a>
                   {/block:Title}
                   {Body}
                 {/block:Text}
+                <!-- /TEXT -->
+                
+                <!-- PHOTO -->
+								{block:Photo}
+									<div class="photo_display">
+										{block:HighRes}<a class="photo_highres" href="{PhotoURL-HighRes}"></a>{/block:HighRes}
+										{LinkOpenTag}<img alt="{PhotoAlt}" src="{PhotoURL-500}" />{LinkCloseTag}
+									</div>
+									<p class="photo_caption">
+									  {block:Caption}{Caption}{/block:Caption}
+									</p>
+								{/block:Photo}
+								<!-- /PHOTO -->
+								
+                
+                {block:Link}
+                  <a class="title" href="{URL}" {Target}>{Name}</a>
+                  {block:Description}{Description}{/block:Description}
+                {/block:Link}
+                
                 
                 {block:HasTags}
                   <div class="tags_section">
@@ -90,10 +112,6 @@
                   </div>
                 {/block:HasTags}
             
-                {block:Link}
-                  <a class="title" href="{URL}" {Target}>{Name}</a>
-                  {block:Description}{Description}{/block:Description}
-                {/block:Link}
                 
               </div>
               <div class="separator">
@@ -107,7 +125,7 @@
           {block:SearchPage}
             {block:SearchResults}
               <h3>{lang:Found SearchResultCount results for SearchQuery 2}</h3>
-			      {/block:SearchResults}
+    		      {/block:SearchResults}
             
             {block:NoSearchResults}
 			        <h3>{lang:No search results for SearchQuery 2}</h3>
@@ -152,7 +170,7 @@
       Icons by
       <a href='http://www.piwidesign.de'>Philipp Walter</a>.
       Background by 
-      <a href='http://awesomewallpapersblog.com/'>Awesome Wallpapers</a>
+      <a href='http://awesomewallpapersblog.com/author/benjammin1/'>Ben</a>
     </div>
 
     <div class='clearfloat'></div>
