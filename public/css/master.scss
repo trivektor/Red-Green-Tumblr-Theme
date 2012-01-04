@@ -173,8 +173,7 @@ input::-webkit-input-placeholder { color:#FFE8CC }
       box-shadow:0 1px 0 #eaf4ff inset;
       background:url(/images/chat_blue.png) repeat-x bottom left #3da6ff;
       border:1px solid #0d3a64;
-      font-size:10px;
-      padding:1px 0;
+      padding:2px 0;
     }
     .content {
       margin-left:93px;
@@ -192,6 +191,7 @@ input::-webkit-input-placeholder { color:#FFE8CC }
         background:#eee;
         border:1px solid #ccc;
         box-shadow:0 3px 5px -3px #555;
+        max-width:100%;
       }
     }
   }
