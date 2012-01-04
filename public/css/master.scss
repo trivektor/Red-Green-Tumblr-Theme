@@ -169,6 +169,7 @@ input::-webkit-input-placeholder { color:#FFE8CC }
 }
 
 .conversation {
+  overflow:hidden;
   li { margin-bottom:14px }
   .odd, .even {
     padding:3px 10px;
@@ -176,11 +177,13 @@ input::-webkit-input-placeholder { color:#FFE8CC }
     color:#fff;
   }
   .odd {
-    background:url(/images/chat_green.png) repeat-x top left #94c626;
+    float:left;
+    background:url(/images/chat_green.png) repeat-x bottom left #94c626;
     border:1px solid #48580a;
   }
   .even {
-    background:url(/images/chat_blue.png) repeat-x top left #339dfb;
+    float:right;
+    background:url(/images/chat_blue.png) repeat-x bottom left #339dfb;
     border:1px solid #0d3a64;
   } 
 }
