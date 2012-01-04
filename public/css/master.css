@@ -154,6 +154,11 @@ input::-webkit-input-placeholder {
     box-shadow: 0 1px 1px #d7f3ff inset;
     text-shadow: 0 1px 1px #111; }
 
+.quote {
+  margin-top: 0 !important;
+  font-size: 20px;
+  line-height: 26px !important; }
+
 .separator {
   width: 100%;
   border-top: 1px dashed #bbb;

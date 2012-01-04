@@ -12,4 +12,9 @@ class RedGreenTheme < Sinatra::Base
     haml :index, :layout => :red_green
   end
   
+  get "/preview" do
+    @title_for_layout = "Preview"
+    erb :preview
+  end
+  
 end
