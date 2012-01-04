@@ -183,14 +183,14 @@ input::-webkit-input-placeholder {
     background: url(/images/chat_blue.png) repeat-x bottom left #3da6ff;
     border: 1px solid #0d3a64; }
 
-.photo_display .photo_wrapper {
+.photo_wrapper {
   padding: 4px;
   border-radius: 3px;
   background: #eee;
   border: 1px solid #ccc;
   box-shadow: 0 3px 5px -3px #555555; }
-.photo_display img {
-  width: 100%; }
+  .photo_wrapper img {
+    width: 100%; }
 
 ol.notes li {
   list-style: none;

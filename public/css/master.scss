@@ -213,16 +213,14 @@ input::-webkit-input-placeholder { color:#FFE8CC }
   } 
 }
 
-.photo_display {
-  .photo_wrapper {
-    padding:4px;
-    border-radius:3px;
-    background:#eee;
-    border:1px solid #ccc;
-    box-shadow:0 3px 5px -3px #555;
-  }
+.photo_wrapper {
+  padding:4px;
+  border-radius:3px;
+  background:#eee;
+  border:1px solid #ccc;
+  box-shadow:0 3px 5px -3px #555;
   img { width:100%; }
-}
+} 
 
 ol.notes {
   li {
