@@ -7,7 +7,7 @@ body {
   font-family:Georgia;
   font-family: 'Marmelad', sans-serif;
   font-size:12px;
-  background:url(/images/bg.jpg) top center repeat;
+  background:url(/images/wood-wallpaper.jpg) repeat fixed;
   padding-bottom:30px;
   color:#444;
 }
@@ -21,6 +21,8 @@ a {
   text-decoration:none;
   color:#DC2509;
 }
+
+input::-webkit-input-placeholder { color:#FFE8CC }
 
 .clearfloat {
   clear:both;
