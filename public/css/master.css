@@ -111,8 +111,10 @@ input::-webkit-input-placeholder {
     padding-bottom: 73px; }
   #entries_column .entry {
     overflow: hidden; }
-    #entries_column .entry .calendar {
+    #entries_column .entry .west {
       float: left;
+      width: 54px; }
+    #entries_column .entry .calendar {
       width: 54px;
       height: 64px;
       padding-top: 4px;
@@ -125,6 +127,10 @@ input::-webkit-input-placeholder {
       #entries_column .entry .calendar .day {
         padding: 4px;
         font-size: 28px; }
+    #entries_column .entry .type {
+      width: 16px;
+      margin: 10px auto 0;
+      display: block; }
     #entries_column .entry .content {
       margin-left: 93px; }
       #entries_column .entry .content .title {

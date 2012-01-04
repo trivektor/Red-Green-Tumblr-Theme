@@ -129,8 +129,11 @@ input::-webkit-input-placeholder { color:#FFE8CC }
   }
   .entry {
     overflow:hidden;
-    .calendar  {
+    .west {
       float:left;
+      width:54px;
+    }
+    .calendar  {
       width:54px;
       height:64px;
       padding-top:4px;
@@ -145,6 +148,11 @@ input::-webkit-input-placeholder { color:#FFE8CC }
         padding:4px;
         font-size:28px;
       }
+    }
+    .type {
+      width:16px;
+      margin:10px auto 0;
+      display:block;
     }
     .content {
       margin-left:93px;

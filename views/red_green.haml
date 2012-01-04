@@ -15,9 +15,13 @@
           
           - 7.downto(1) do |i|
             .entry
-              .calendar
-                .month Jan
-                .day= "0#{i}"
+              .west
+                .calendar
+                  .month Jan
+                  .day= "0#{i}"
+                
+                /= image_tag "images/photo_type.png", :class => :type
+                
               .content
                 .title
                   %a{:href => "#"} Simple programming rules I like
