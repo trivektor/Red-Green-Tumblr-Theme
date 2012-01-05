@@ -6,7 +6,7 @@ body {
   font-family: Georgia;
   font-family: 'Marmelad', sans-serif;
   font-size: 12px;
-  background: url(/images/wood-wallpaper.jpg) repeat fixed;
+  background: url(images/wood-wallpaper.jpg) repeat fixed;
   padding-bottom: 30px;
   color: #444; }
 
@@ -33,11 +33,11 @@ input::-webkit-input-placeholder {
   height: 0; }
 
 #thin_strip {
-  background: url(/images/thin_strip.png) repeat-x;
+  background: url(images/thin_strip.png) repeat-x;
   height: 2px; }
 
 #header {
-  background: url(/images/header_bg.png) repeat-x;
+  background: url(images/header_bg.png) repeat-x;
   height: 60px; }
   #header .inner {
     width: 844px;
@@ -64,7 +64,7 @@ input::-webkit-input-placeholder {
   float: right;
   width: 204px;
   height: 38px;
-  background: url(/images/search_box_bg.png) no-repeat; }
+  background: url(images/search_box_bg.png) no-repeat; }
   #search_box #search {
     background: none;
     color: #ffe8cc;
@@ -83,12 +83,12 @@ input::-webkit-input-placeholder {
     float: left;
     margin-left: 6px; }
     .blog_title_wrapper .blog_title .left {
-      background: url(/images/blog_title_left.png) no-repeat;
+      background: url(images/blog_title_left.png) no-repeat;
       padding-left: 14px; }
     .blog_title_wrapper .blog_title .title {
       font-weight: normal;
       font-size: 27px;
-      background: url(/images/blog_title_center.png) repeat-x;
+      background: url(images/blog_title_center.png) repeat-x;
       text-align: center;
       line-height: 63px;
       text-shadow: 0 1px 3px #111;
@@ -98,7 +98,7 @@ input::-webkit-input-placeholder {
         color: #fff;
         font-weight: normal; }
     .blog_title_wrapper .blog_title .right {
-      background: url(/images/blog_title_right.png) no-repeat bottom right;
+      background: url(images/blog_title_right.png) no-repeat bottom right;
       padding-right: 15px; }
 
 #main_content {
@@ -109,13 +109,13 @@ input::-webkit-input-placeholder {
   float: left;
   width: 642px; }
   #entries_column .top {
-    background: url(/images/entry_col_bg.png) no-repeat;
+    background: url(images/entry_col_bg.png) no-repeat;
     padding-top: 55px; }
   #entries_column .middle {
-    background: url(/images/entry_column_middle_bg.png) repeat-y;
+    background: url(images/entry_column_middle_bg.png) repeat-y;
     padding: 1px 50px; }
   #entries_column .bottom {
-    background: url(/images/entry_col_bottom_bg.png) no-repeat;
+    background: url(images/entry_col_bottom_bg.png) no-repeat;
     padding-bottom: 73px; }
   #entries_column .entry .west {
     float: left;
@@ -125,7 +125,7 @@ input::-webkit-input-placeholder {
     height: 64px;
     padding-top: 4px;
     text-align: center;
-    background: url(/images/calendar.png) no-repeat; }
+    background: url(images/calendar.png) no-repeat; }
     #entries_column .entry .calendar .month {
       color: #fff;
       text-transform: uppercase;
@@ -146,7 +146,7 @@ input::-webkit-input-placeholder {
     margin-top: 10px;
     text-shadow: 0 1px 1px #444;
     box-shadow: 0 1px 0 #eaf4ff inset;
-    background: url(/images/chat_blue.png) repeat-x bottom left #3da6ff;
+    background: url(images/chat_blue.png) repeat-x bottom left #3da6ff;
     border: 1px solid #0d3a64;
     padding: 2px 0; }
   #entries_column .entry .content {
@@ -160,10 +160,14 @@ input::-webkit-input-placeholder {
     #entries_column .entry .content img {
       padding: 4px;
       border-radius: 3px;
-      background: #eee;
+      background: #fff;
       border: 1px solid #ccc;
       box-shadow: 0 3px 5px -3px #555555;
       max-width: 100%; }
+
+.post_type_icon img {
+  margin: 10px auto;
+  display: none; }
 
 .conversation {
   overflow: hidden; }
@@ -181,12 +185,12 @@ input::-webkit-input-placeholder {
   .conversation .odd {
     float: left;
     box-shadow: 0 1px 0 #f0ffd2 inset;
-    background: url(/images/chat_green.png) repeat-x bottom left #94c626;
+    background: url(images/chat_green.png) repeat-x bottom left #94c626;
     border: 1px solid #48580a; }
   .conversation .even {
     float: right;
     box-shadow: 0 1px 0 #eaf4ff inset;
-    background: url(/images/chat_blue.png) repeat-x bottom left #3da6ff;
+    background: url(images/chat_blue.png) repeat-x bottom left #3da6ff;
     border: 1px solid #0d3a64; }
 
 ol.notes li {
@@ -200,10 +204,10 @@ ol.notes li {
   #profile_picture_column #profile_picture {
     margin-bottom: 15px;
     margin-top: 6px; }
-  #profile_picture_column #askme_wrapper {
+  #profile_picture_column #askme_wrapper, #profile_picture_column #follow_wrapper {
     box-shadow: 0px 9px 8px -2px #111111; }
-  #profile_picture_column #askme {
-    background: url(/images/ask_bg.jpg) repeat-x left bottom #54b0ff;
+  #profile_picture_column #askme, #profile_picture_column #follow {
+    background: url(images/ask_bg.jpg) repeat-x left bottom #54b0ff;
     padding: 5px 25px;
     text-align: center;
     display: inline-block;
@@ -241,7 +245,7 @@ ol.notes li {
     float: left; }
     .tags_section .tags_list .tag {
       float: left;
-      background: url(/images/tag_bg.png) repeat-x #94c626 left bottom;
+      background: url(images/tag_bg.png) repeat-x #94c626 left bottom;
       padding: 3px 7px;
       border-radius: 4px;
       border: 1px solid #48580a;

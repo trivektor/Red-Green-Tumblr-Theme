@@ -1,14 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
-    <title>{Title}</title>
+    <title>{Title}{block:Pagination} - {lang:Page CurrentPage of TotalPages}{/block:Pagination}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
     {block:Description}
         <meta name="description" content="{MetaDescription}" />
     {/block:Description}
     
     <link charset="utf-8" href="http://fonts.googleapis.com/css?family=Marmelad" media="screen" rel="stylesheet" type="text/css">
     
-    <link charset="utf-8" href="http://red-green-tumblr.heroku.com/css/master.css" media="screen" rel="stylesheet" type="text/css">
+    <link charset="utf-8" href="http://trivuong.com/tumblr/master.css" media="screen" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div id='thin_strip'></div>
@@ -67,7 +67,7 @@
         <div class='middle'>
           {block:Posts}
           
-            <div class="entry clearfix">
+            <div class="entry {PostType}_type">
                 <div class="west">
                     <div class="calendar">
                         <div class="month">{ShortMonth}</div>
@@ -75,8 +75,17 @@
                     </div>
                     
                     {block:NoteCount}
-    				    <a class="note_count" href="{Permalink}#notes">{NoteCountWithLabel}</a>
-					{/block:NoteCount}
+    				          <a class="note_count" href="{Permalink}#notes">{NoteCountWithLabel}</a>
+					          {/block:NoteCount}
+					          
+					          <div class="post_type_icon">
+					            <img src="http://red-green-tumblr.heroku.com/images/photo_icon.png" class="photo_icon" />
+					            <img src="http://red-green-tumblr.heroku.com/images/video_icon.png" class="video_icon" />
+					            <img src="http://red-green-tumblr.heroku.com/images/text_icon.png" class="text_icon" />
+					            <img src="http://red-green-tumblr.heroku.com/images/quote_icon.png" class="quote_icon" />
+					            <img src="http://red-green-tumblr.heroku.com/images/photo_icon.png" class="photo_icon" />
+					            <img src="http://red-green-tumblr.heroku.com/images/chat_icon.png" class="chat_icon" />
+					          </div>
 
                 </div>
               <div class="content">
@@ -93,13 +102,12 @@
                 <!-- PHOTO -->
     							{block:Photo}
 									<div class="photo_display">
-                                        <div class="photo_wrapper">
+										{block:HighRes}<a class="photo_highres" href="{PhotoURL-HighRes}"></a>{/block:HighRes}
 										{LinkOpenTag}<img alt="{PhotoAlt}" src="{PhotoURL-500}" />{LinkCloseTag}
-                                        </div>
 									</div>
-									<div class="photo_caption">
+									<p class="photo_caption">
 									  {block:Caption}{Caption}{/block:Caption}
-									</div>
+									</p>
 								{/block:Photo}
 								<!-- /PHOTO -->
 								
@@ -119,7 +127,7 @@
 								
 								<!-- AUDIO -->
 								{block:Audio}
-									<div class="auto_info">
+									<div class="AUDIO_info">
 										<div class="AUDIO_info_album">
 											<div class="AUDIO_info_album_overlay"></div>
 											{block:AlbumArt}<img  alt="" src="{AlbumArtURL}" />{/block:AlbumArt}
@@ -266,10 +274,21 @@
       <div id='profile_picture_column'>
         <img id="profile_picture" src="http://red-green-tumblr.heroku.com/images/tri_polaroid.png" />
         {block:AskEnabled}
-            <span id="askme_wrapper">
-                <a href="/ask" id='askme'>{AskLabel}</a>
-            </span>
+            
         {/block:AskEnabled}
+        
+        <a href="http://tumblr.com/follow/{Name}" target="_blank" id="follow_wrapper">
+            <span id="follow">Follow this blog</span>
+        </a>
+        
+    	{block:IfShowPeopleIFollow}
+		    {block:Following}
+          {block:Followed}
+					
+				  {/block:Followed}
+			  {/block:Following}
+		  {/block:IfShowPeopleIFollow}
+        
       </div>
       <div class='clearfloat'></div>
       
