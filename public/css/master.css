@@ -168,9 +168,6 @@ input::-webkit-input-placeholder {
 .post_type_icon {
   margin-top: 15px;
   text-align: center; }
-  .post_type_icon img {
-    margin: 10px 0;
-    display: none; }
 
 .text_type .post_type_icon .photo_icon {
   display: inline !important; }
