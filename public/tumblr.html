@@ -73,14 +73,14 @@
                         <div class="month">{ShortMonth}</div>
                         <div class="day">{DayOfMonthWithZero}</div>
                     </div>
-                    
-                    {block:NoteCount}
-            		          <a class="note_count" href="{Permalink}#notes">{NoteCountWithLabel}</a>
-					          {/block:NoteCount}
-					          
+                        				          
 					          <div class="post_type_icon">
 					            <img src="http://red-green-tumblr.heroku.com/css/images/{PostType}_icon.png" />
 					          </div>
+					          
+					          {block:NoteCount}
+            		          <!-- <a class="note_count" href="{Permalink}#notes">{NoteCountWithLabel}</a> -->
+					          {/block:NoteCount}
 
                 </div>
               <div class="content">
@@ -267,14 +267,13 @@
         <div class='bottom'></div>
       </div>
       <div id='profile_picture_column'>
-        <img id="profile_picture" src="http://red-green-tumblr.heroku.com/css/images/tri_polaroid.png" />
+        <div id="polaroid">
+            <img src="{PortraitURL-128}">
+        </div>
+        
         {block:AskEnabled}
             
         {/block:AskEnabled}
-        
-        <a href="http://tumblr.com/follow/{Name}" target="_blank" id="follow_wrapper">
-            <span id="follow">Follow this blog</span>
-        </a>
         
     	{block:IfShowPeopleIFollow}
 		    {block:Following}

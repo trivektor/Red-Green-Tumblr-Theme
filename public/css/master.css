@@ -1,298 +1,77 @@
-* {
-  margin: 0;
-  padding: 0; }
+/*
+Syntax error: Invalid CSS after "    background": expected "{", was "(images/polaroi..."
+        on line 273 of master.scss
 
-body {
-  font-family: Georgia;
-  font-family: 'Marmelad', sans-serif;
-  font-size: 12px;
-  background: url(images/wood-wallpaper.jpg) repeat fixed;
-  padding-bottom: 30px;
-  color: #444; }
+268:     box-shadow:0 1px 1px #d7f3ff inset;
+269:     text-shadow:0 1px 1px #111;
+270:   }
+271:   
+272:   #polaroid {
+273:     background(images/polaroid.png) no-repeat;
+274:     width:146px;
+275:     height:166px;
+276:     img {
+277:       margin-top:9px;
+278:       margin-left:9px;
 
-ul, ol {
-  list-style: none; }
-
-a {
-  outline-style: none;
-  text-decoration: none;
-  color: #DC2509; }
-
-input::-webkit-input-placeholder {
-  color: #FFE8CC; }
-
-.clearfloat {
-  clear: both; }
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
-
-#thin_strip {
-  background: url(images/thin_strip.png) repeat-x;
-  height: 2px; }
-
-#header {
-  background: url(images/header_bg.png) repeat-x;
-  height: 60px; }
-  #header .inner {
-    width: 844px;
-    margin: 0 auto;
-    padding-top: 9px;
-    overflow: hidden; }
-
-#social_networks {
-  float: left;
-  width: 400px;
-  margin-top: 9px;
-  margin-left: 13px; }
-  #social_networks li {
-    float: left;
-    margin-right: 52px; }
-  #social_networks #facebook {
-    position: relative;
-    top: -5px; }
-  #social_networks #github {
-    position: relative;
-    top: -3px; }
-
-#search_box {
-  float: right;
-  width: 204px;
-  height: 38px;
-  background: url(images/search_box_bg.png) no-repeat; }
-  #search_box #search {
-    background: none;
-    color: #ffe8cc;
-    margin-left: 37px;
-    margin-top: 12px;
-    border: 0;
-    width: 156px;
-    outline: none;
-    outline-style: none; }
-
-.blog_title_wrapper {
-  width: 844px;
-  margin: 30px auto;
-  overflow: hidden; }
-  .blog_title_wrapper .blog_title {
-    float: left;
-    margin-left: 6px; }
-    .blog_title_wrapper .blog_title .left {
-      background: url(images/blog_title_left.png) no-repeat;
-      padding-left: 14px; }
-    .blog_title_wrapper .blog_title .title {
-      font-weight: normal;
-      font-size: 27px;
-      background: url(images/blog_title_center.png) repeat-x;
-      text-align: center;
-      line-height: 63px;
-      text-shadow: 0 1px 3px #111;
-      height: 67px;
-      padding: 0 12px; }
-      .blog_title_wrapper .blog_title .title a {
-        color: #fff;
-        font-weight: normal; }
-    .blog_title_wrapper .blog_title .right {
-      background: url(images/blog_title_right.png) no-repeat bottom right;
-      padding-right: 15px; }
-
-#main_content {
-  width: 844px;
-  margin: 0 auto; }
-
-#entries_column {
-  float: left;
-  width: 642px; }
-  #entries_column .top {
-    background: url(images/entry_col_bg.png) no-repeat;
-    padding-top: 55px; }
-  #entries_column .middle {
-    background: url(images/entry_column_middle_bg.png) repeat-y;
-    padding: 1px 50px; }
-  #entries_column .bottom {
-    background: url(images/entry_col_bottom_bg.png) no-repeat;
-    padding-bottom: 73px; }
-  #entries_column .entry .west {
-    float: left;
-    width: 54px; }
-  #entries_column .entry .calendar {
-    width: 54px;
-    height: 64px;
-    padding-top: 4px;
-    text-align: center;
-    background: url(images/calendar.png) no-repeat; }
-    #entries_column .entry .calendar .month {
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 10px; }
-    #entries_column .entry .calendar .day {
-      padding: 4px;
-      font-size: 28px; }
-  #entries_column .entry .type {
-    width: 16px;
-    margin: 10px auto 0;
-    display: block; }
-  #entries_column .entry .note_count {
-    display: block;
-    background: #55a1d5;
-    color: #fff;
-    text-align: center;
-    border-radius: 20px;
-    margin-top: 10px;
-    text-shadow: 0 1px 1px #444;
-    box-shadow: 0 1px 0 #eaf4ff inset;
-    background: url(images/chat_blue.png) repeat-x bottom left #3da6ff;
-    border: 1px solid #0d3a64;
-    padding: 2px 0; }
-  #entries_column .entry .content {
-    margin-left: 93px; }
-    #entries_column .entry .content .title {
-      font-size: 22px;
-      margin-bottom: 20px; }
-    #entries_column .entry .content p {
-      margin: 15px 0;
-      line-height: 22px; }
-    #entries_column .entry .content img {
-      padding: 4px;
-      border-radius: 3px;
-      background: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 0 3px 5px -3px #555555;
-      max-width: 100%; }
-
-.post_type_icon {
-  margin-top: 15px;
-  text-align: center; }
-
-.text_type .post_type_icon .photo_icon {
-  display: inline !important; }
-.text_type .post_type_icon .video_icon {
-  display: inline !important; }
-.text_type .post_type_icon .text_icon {
-  display: inline !important; }
-.text_type .post_type_icon .quote_icon {
-  display: inline !important; }
-.text_type .post_type_icon .photo_icon {
-  display: inline !important; }
-.text_type .post_type_icon .chat_icon {
-  display: inline !important; }
-
-.conversation {
-  overflow: hidden; }
-  .conversation li {
-    margin-bottom: 14px;
-    box-shadow: 0 2px 3px -2px #222222;
-    border-radius: 4px;
-    float: left;
-    clear: both; }
-  .conversation .inner {
-    padding: 5px 11px;
-    border-radius: 4px;
-    color: #fff;
-    text-shadow: 0 1px 1px #444; }
-  .conversation .odd {
-    float: left;
-    box-shadow: 0 1px 0 #f0ffd2 inset;
-    background: url(images/chat_green.png) repeat-x bottom left #94c626;
-    border: 1px solid #48580a; }
-  .conversation .even {
-    float: right;
-    box-shadow: 0 1px 0 #eaf4ff inset;
-    background: url(images/chat_blue.png) repeat-x bottom left #3da6ff;
-    border: 1px solid #0d3a64; }
-
-ol.notes li {
-  list-style: none;
-  margin-bottom: 5px; }
-
-#profile_picture_column {
-  float: right;
-  width: 175px;
-  text-align: center; }
-  #profile_picture_column #profile_picture {
-    margin-bottom: 15px;
-    margin-top: 6px; }
-  #profile_picture_column #askme_wrapper, #profile_picture_column #follow_wrapper {
-    box-shadow: 0px 9px 8px -2px #111111; }
-  #profile_picture_column #askme, #profile_picture_column #follow {
-    background: url(images/ask_bg.jpg) repeat-x left bottom #54b0ff;
-    padding: 5px 25px;
-    text-align: center;
-    display: inline-block;
-    color: #fff;
-    border: 1px solid #124591;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px #d7f3ff inset;
-    text-shadow: 0 1px 1px #111; }
-
-.quote {
-  margin-top: 0 !important;
-  font-size: 20px;
-  line-height: 26px !important; }
-
-.separator {
-  width: 100%;
-  border-top: 1px dashed #bbb;
-  text-align: center;
-  margin: 50px 0 40px; }
-  .separator .scissor {
-    position: relative;
-    top: -8px; }
-
-.tags_section {
-  margin-top: 35px;
-  overflow: hidden; }
-  .tags_section h3 {
-    color: #ed7248;
-    font-weight: normal;
-    margin-bottom: 10px;
-    font-size: 16px;
-    float: left;
-    margin-right: 15px; }
-  .tags_section .tags_list {
-    float: left; }
-    .tags_section .tags_list .tag {
-      float: left;
-      background: url(images/tag_bg.png) repeat-x #94c626 left bottom;
-      padding: 3px 7px;
-      border-radius: 4px;
-      border: 1px solid #48580a;
-      color: #fff;
-      display: inline-block;
-      box-shadow: 0 1px 0 #f0ffd2 inset;
-      margin-right: 10px;
-      margin-bottom: 10px; }
-
-.pagination {
-  margin: 30px auto;
-  text-align: center; }
-  .pagination .next, .pagination .prev {
-    background: #539a2c;
-    box-shadow: 0 1px 1px #affa85 inset;
-    border: 1px solid #18310b;
-    text-shadow: 0 1px 1px #111;
-    font-size: 13px;
-    border-radius: 4px;
-    padding: 4px 8px;
-    color: #fff;
-    margin: 0 12px; }
-
-#footer {
-  width: 844px;
-  margin: 80px auto 0; }
-  #footer #powered {
-    float: left;
-    margin-left: 10px; }
-  #footer #copyright {
-    margin-left: 170px;
-    color: #fff;
-    text-shadow: 0 1px 1px #111;
-    height: 36px;
-    line-height: 36px; }
-    #footer #copyright a {
-      color: #ffad1e; }
+Backtrace:
+master.scss:273
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:929:in `expected'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:875:in `expected'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:870:in `tok!'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:379:in `block'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:374:in `ruleset'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:436:in `block in declaration_or_ruleset'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:913:in `call'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:913:in `rethrow'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:437:in `declaration_or_ruleset'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:399:in `block_child'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:388:in `block_contents'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:380:in `block'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:374:in `ruleset'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:436:in `block in declaration_or_ruleset'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:913:in `call'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:913:in `rethrow'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:437:in `declaration_or_ruleset'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:399:in `block_child'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:391:in `block_contents'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:380:in `block'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:374:in `ruleset'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:398:in `block_child'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:391:in `block_contents'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:59:in `stylesheet'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/scss/parser.rb:28:in `parse'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/engine.rb:327:in `_to_tree'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/engine.rb:300:in `_render'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/engine.rb:247:in `render'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/plugin/compiler.rb:339:in `update_stylesheet'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/plugin/compiler.rb:200:in `each'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/plugin/compiler.rb:293:in `block (4 levels) in watch'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/state/file.rb:19:in `refresh'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `each'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `run'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/plugin/compiler.rb:265:in `watch'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/plugin.rb:107:in `method_missing'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/exec.rb:421:in `watch_or_update'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/exec.rb:302:in `process_result'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/exec.rb:41:in `parse'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/lib/sass/exec.rb:21:in `parse!'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.1.12/bin/sass:8:in `<top (required)>'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/bin/sass:19:in `load'
+/Users/trivuong/.rvm/gems/ruby-1.9.2-p290/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"    background\": expected \"{\", was \"(images/polaroi...\"\A         on line 273 of master.scss\A \A 268:     box-shadow:0 1px 1px #d7f3ff inset;\A 269:     text-shadow:0 1px 1px #111;\A 270:   }\A 271:   \A 272:   #polaroid {\A 273:     background(images/polaroid.png) no-repeat;\A 274:     width:146px;\A 275:     height:166px;\A 276:     img {\A 277:       margin-top:9px;\A 278:       margin-left:9px;"; }
