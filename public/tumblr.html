@@ -267,12 +267,21 @@
         <div class='bottom'></div>
       </div>
       <div id='profile_picture_column'>
-        <div id="polaroid">
+        
+        {block:IfShowPortrait}
+          <div id="polaroid">
             <div class="inner">
               <div class="shadow"></div>
               <img src="{PortraitURL-128}" alt="Me" />
             </div>
-        </div>
+          </div>
+        {/block:IfShowPortrait}
+        
+        {block:Description}
+          <div id="description">
+            {Description}
+          </div>
+        {/block:Description}
         
         {block:AskEnabled}
             

@@ -249,6 +249,11 @@ ol.notes li {
         width: 128px;
         height: 128px;
         z-index: 10; }
+  #profile_picture_column #description {
+    margin: 0 auto;
+    width: 146px;
+    text-shadow: 0 1px 1px #111;
+    color: #fff; }
 
 .quote {
   margin-top: 0 !important;
