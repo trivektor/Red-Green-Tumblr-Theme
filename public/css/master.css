@@ -232,10 +232,14 @@ ol.notes li {
   #profile_picture_column #polaroid {
     background: url(images/polaroid.png) no-repeat top center;
     width: 146px;
-    height: 166px; }
-    #profile_picture_column #polaroid img {
-      margin-top: 9px;
-      margin-left: 9px; }
+    height: 166px;
+    margin: 0 auto; }
+    #profile_picture_column #polaroid .inner {
+      margin: 7px auto 0;
+      width: 128px;
+      height: 128px;
+      overflow: hidden;
+      box-shadow: 0 1px 1px 2px #222; }
 
 .quote {
   margin-top: 0 !important;
