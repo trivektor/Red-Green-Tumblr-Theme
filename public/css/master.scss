@@ -198,12 +198,23 @@ input::-webkit-input-placeholder { color:#FFE8CC }
 }
 
 .post_type_icon {
+  margin-top:15px;
+  text-align:center;
   img {
-    margin:10px auto;
+    margin:10px 0;
     display:none;
   }
-  
-  
+}
+
+.text_type {
+  .post_type_icon {
+    .photo_icon { display:inline !important }
+    .video_icon { display:inline !important }
+    .text_icon { display:inline !important }
+    .quote_icon { display:inline !important }
+    .photo_icon { display:inline !important }
+    .chat_icon { display:inline !important }
+  }
 }
 
 .conversation {

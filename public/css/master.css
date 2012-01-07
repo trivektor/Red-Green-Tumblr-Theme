@@ -165,9 +165,25 @@ input::-webkit-input-placeholder {
       box-shadow: 0 3px 5px -3px #555555;
       max-width: 100%; }
 
-.post_type_icon img {
-  margin: 10px auto;
-  display: none; }
+.post_type_icon {
+  margin-top: 15px;
+  text-align: center; }
+  .post_type_icon img {
+    margin: 10px 0;
+    display: none; }
+
+.text_type .post_type_icon .photo_icon {
+  display: inline !important; }
+.text_type .post_type_icon .video_icon {
+  display: inline !important; }
+.text_type .post_type_icon .text_icon {
+  display: inline !important; }
+.text_type .post_type_icon .quote_icon {
+  display: inline !important; }
+.text_type .post_type_icon .photo_icon {
+  display: inline !important; }
+.text_type .post_type_icon .chat_icon {
+  display: inline !important; }
 
 .conversation {
   overflow: hidden; }
