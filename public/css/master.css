@@ -242,7 +242,7 @@ ol.notes li {
       overflow: hidden;
       position: relative; }
       #profile_picture_column #polaroid .inner .shadow {
-        box-shadow: 0 1px 2px 2px #444 inset;
+        box-shadow: 0 1px 3px -1px #111111 inset;
         position: absolute;
         top: 0;
         left: 0;
