@@ -233,11 +233,10 @@ ol.notes li {
         height: 128px;
         z-index: 10; }
   #profile_picture_column #description {
-    margin: 0 auto;
-    width: 142px;
+    margin: 0 auto 10px;
     text-shadow: 0 1px 1px #111;
     color: #fff;
-    line-height: 18px; }
+    line-height: 16px; }
 
 .quote {
   margin-top: 0 !important;
