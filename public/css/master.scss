@@ -198,19 +198,8 @@ input::-webkit-input-placeholder { color:#FFE8CC }
 }
 
 .post_type_icon {
-  margin-top:15px;
+  margin-top:10px;
   text-align:center;
-}
-
-.text_type {
-  .post_type_icon {
-    .photo_icon { display:inline !important }
-    .video_icon { display:inline !important }
-    .text_icon { display:inline !important }
-    .quote_icon { display:inline !important }
-    .photo_icon { display:inline !important }
-    .chat_icon { display:inline !important }
-  }
 }
 
 .conversation {
@@ -246,12 +235,6 @@ ol.notes {
 #profile_picture_column {
   float:right;
   width:175px;
-  text-align:center;
-  
-  #profile_picture {
-    margin-bottom:15px;
-    margin-top:6px;
-  }
   
   #askme_wrapper, #follow_wrapper {
     box-shadow:0px 9px 8px -2px #111;
@@ -294,9 +277,10 @@ ol.notes {
   
   #description {
     margin:0 auto;
-    width:146px;
+    width:142px;
     text-shadow:0 1px 1px #111;
     color:#fff;
+    line-height:18px;
   }
 }
 

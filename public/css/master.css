@@ -166,21 +166,8 @@ input::-webkit-input-placeholder {
       max-width: 100%; }
 
 .post_type_icon {
-  margin-top: 15px;
+  margin-top: 10px;
   text-align: center; }
-
-.text_type .post_type_icon .photo_icon {
-  display: inline !important; }
-.text_type .post_type_icon .video_icon {
-  display: inline !important; }
-.text_type .post_type_icon .text_icon {
-  display: inline !important; }
-.text_type .post_type_icon .quote_icon {
-  display: inline !important; }
-.text_type .post_type_icon .photo_icon {
-  display: inline !important; }
-.text_type .post_type_icon .chat_icon {
-  display: inline !important; }
 
 .conversation {
   overflow: hidden; }
@@ -212,11 +199,7 @@ ol.notes li {
 
 #profile_picture_column {
   float: right;
-  width: 175px;
-  text-align: center; }
-  #profile_picture_column #profile_picture {
-    margin-bottom: 15px;
-    margin-top: 6px; }
+  width: 175px; }
   #profile_picture_column #askme_wrapper, #profile_picture_column #follow_wrapper {
     box-shadow: 0px 9px 8px -2px #111111; }
   #profile_picture_column #askme, #profile_picture_column #follow {
@@ -251,9 +234,10 @@ ol.notes li {
         z-index: 10; }
   #profile_picture_column #description {
     margin: 0 auto;
-    width: 146px;
+    width: 142px;
     text-shadow: 0 1px 1px #111;
-    color: #fff; }
+    color: #fff;
+    line-height: 18px; }
 
 .quote {
   margin-top: 0 !important;

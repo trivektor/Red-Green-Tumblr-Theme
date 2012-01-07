@@ -268,14 +268,12 @@
       </div>
       <div id='profile_picture_column'>
         
-        {block:IfShowPortrait}
-          <div id="polaroid">
-            <div class="inner">
-              <div class="shadow"></div>
-              <img src="{PortraitURL-128}" alt="Me" />
-            </div>
+        <div id="polaroid">
+          <div class="inner">
+            <div class="shadow"></div>
+            <img src="{PortraitURL-128}" alt="Me" />
           </div>
-        {/block:IfShowPortrait}
+        </div>
         
         {block:Description}
           <div id="description">
@@ -283,8 +281,14 @@
           </div>
         {/block:Description}
         
+        {block:Following} 
+          <div id="follow_wrapper">
+            <a id="follow" href="http://tumblr.com/follow/{Name}">Follow this blog</a>
+          </div>
+        {/block:Following} 
+        
         {block:AskEnabled}
-            
+          
         {/block:AskEnabled}
         
     	{block:IfShowPeopleIFollow}
