@@ -270,7 +270,7 @@ ol.notes {
   }
   
   #polaroid {
-    background(images/polaroid.png) no-repeat;
+    background:url(images/polaroid.png) no-repeat top center;
     width:146px;
     height:166px;
     img {
