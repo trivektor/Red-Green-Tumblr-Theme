@@ -216,7 +216,7 @@ ol.notes li {
     background: url(images/polaroid.png) no-repeat top center;
     width: 146px;
     height: 166px;
-    margin: 5px 0 0 -2px;
+    margin: 5px 0 0 -3px;
     padding-top: 7px; }
     #profile_picture_column #polaroid .inner {
       margin: 0 auto;
@@ -293,13 +293,11 @@ ol.notes li {
 #footer {
   width: 844px;
   margin: 80px auto 0; }
-  #footer #powered {
-    float: left;
-    margin-left: 10px; }
   #footer #copyright {
     color: #fff;
     text-shadow: 0 1px 1px #111;
     text-align: center;
+    font-size: 13px;
     height: 36px;
     line-height: 36px; }
     #footer #copyright a {
