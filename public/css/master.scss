@@ -191,7 +191,7 @@ input::-webkit-input-placeholder { color:#FFE8CC }
         background:#fff;
         border:1px solid #ccc;
         box-shadow:0 3px 5px -3px #555;
-        max-width:100%;
+        max-width:430px
       }
     }
   }
@@ -301,7 +301,7 @@ ol.notes {
 }
 
 .tags_section {
-  margin-top:35px; overflow:hidden;
+  margin-top:20px; overflow:hidden;
   h3 { color:#ed7248; font-weight:normal; margin-bottom:10px; font-size:16px; float:left; margin-right:15px }
   .tags_list {
     float:left; 
@@ -318,6 +318,10 @@ ol.notes {
       margin-bottom:10px;
     }
   }
+}
+
+.AUDIO_info_float {
+  margin-top:10px;
 }
 
 .pagination {

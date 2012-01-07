@@ -163,7 +163,7 @@ input::-webkit-input-placeholder {
       background: #fff;
       border: 1px solid #ccc;
       box-shadow: 0 3px 5px -3px #555555;
-      max-width: 100%; }
+      max-width: 430px; }
 
 .post_type_icon {
   margin-top: 10px;
@@ -253,7 +253,7 @@ ol.notes li {
     top: -8px; }
 
 .tags_section {
-  margin-top: 35px;
+  margin-top: 20px;
   overflow: hidden; }
   .tags_section h3 {
     color: #ed7248;
@@ -275,6 +275,9 @@ ol.notes li {
       box-shadow: 0 1px 0 #f0ffd2 inset;
       margin-right: 10px;
       margin-bottom: 10px; }
+
+.AUDIO_info_float {
+  margin-top: 10px; }
 
 .pagination {
   margin: 30px auto;
