@@ -256,7 +256,7 @@ ol.notes {
     background:url(images/polaroid.png) no-repeat top center;
     width:146px;
     height:166px;
-    margin:5px auto 0;
+    margin:5px 0 0 -2px;
     padding-top:7px;
     .inner {
       margin:0 auto;
@@ -276,7 +276,7 @@ ol.notes {
   }
   
   #description {
-    margin:0 auto 10px;
+    margin:0 auto 15px;
     text-shadow:0 1px 1px #111;
     color:#fff;
     line-height:16px;
@@ -346,12 +346,11 @@ ol.notes {
   }
   
   #copyright {
-    margin-left:170px;
     color:#fff;
     text-shadow:0 1px 1px #111;
+    text-align:center;
     height:36px;
     line-height:36px;
-    
     a { color: #ffad1e }
   }
 }
