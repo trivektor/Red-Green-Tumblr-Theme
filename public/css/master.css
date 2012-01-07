@@ -239,7 +239,10 @@ ol.notes li {
       margin: 0 auto;
       width: 128px;
       height: 128px;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
+      #profile_picture_column #polaroid .inner .shadow {
+        box-shadow: 0 1px 2px 2px #444 inset; }
 
 .quote {
   margin-top: 0 !important;
