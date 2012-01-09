@@ -73,13 +73,13 @@
                         <div class="month">{ShortMonth}</div>
                         <div class="day">{DayOfMonthWithZero}</div>
                     </div>
-                            			          
+                                		          
 					          <div class="post_type_icon">
 					            <img src="http://red-green-tumblr.heroku.com/css/images/{PostType}_icon.png" />
 					          </div>
 					          
 					          {block:NoteCount}
-            		      <a class="note_count" href="{Permalink}#notes">{NoteCount}</a>
+            		      <a class="note_count" href="{Permalink}#notes" title="{NoteCountWithLabel}">{NoteCount}</a>
 					          {/block:NoteCount}
 
                 </div>
@@ -203,11 +203,10 @@
                 
                 {block:HasTags}
                   <div class="tags_section">
-                      <div class="tags_list">
-                          {block:Tags}
-                              <a class="tag" href="{TagURL}">{Tag}</a>
-                          {/block:Tags}
-                      </div>
+                    Tags: 
+                    {block:Tags}
+                        <a class="tag" href="{TagURL}">{Tag}</a>,
+                    {/block:Tags}
                   </div>
                 {/block:HasTags}
             

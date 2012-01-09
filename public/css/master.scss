@@ -302,23 +302,9 @@ ol.notes {
 }
 
 .tags_section {
-  margin-top:20px; overflow:hidden;
-  h3 { color:#ed7248; font-weight:normal; margin-bottom:10px; font-size:16px; float:left; margin-right:15px }
-  .tags_list {
-    float:left; 
-    .tag { 
-      float:left;
-      background:url(images/tag_bg.png) repeat-x #94c626 left bottom; 
-      padding:2px 6px; 
-      border-radius:4px;
-      border:1px solid #48580a;
-      color:#fff;
-      display:inline-block;
-      box-shadow:0 1px 0 #f0ffd2 inset;
-      margin:0 10px 10px 0;
-      font-size:11px;
-    }
-  }
+  margin-top:20px;
+  background:url(images/tag.png) no-repeat;
+  padding-left:24px
 }
 
 .AUDIO_info_float {
