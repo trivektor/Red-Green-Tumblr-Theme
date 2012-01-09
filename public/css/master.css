@@ -93,7 +93,8 @@ input::-webkit-input-placeholder {
       line-height: 63px;
       text-shadow: 0 1px 3px #111;
       height: 67px;
-      padding: 0 12px; }
+      padding: 0 12px;
+      display: block; }
       .blog_title_wrapper .blog_title .title a {
         color: #fff;
         font-weight: normal; }
@@ -147,7 +148,7 @@ input::-webkit-input-placeholder {
     border-radius: 20px;
     background: #888;
     color: #fff;
-    font-size: 10px; }
+    font-size: 11px; }
   #entries_column .entry .content {
     margin-left: 93px; }
     #entries_column .entry .content .title {
@@ -237,6 +238,13 @@ ol.notes li {
     text-shadow: 0 1px 1px #111;
     color: #fff;
     line-height: 16px; }
+  #profile_picture_column #navigation {
+    margin-top: 20px; }
+    #profile_picture_column #navigation li {
+      margin: 10px 0; }
+      #profile_picture_column #navigation li a {
+        color: #fff;
+        text-shadow: 0 1px 1px #111; }
 
 .quote {
   margin-top: 0 !important;
@@ -253,7 +261,7 @@ ol.notes li {
     top: -8px; }
 
 .tags_section {
-  margin-top: 20px;
+  margin-top: 25px;
   background: url(images/tag.png) no-repeat;
   padding: 1px 0 1px 24px; }
   .tags_section a {

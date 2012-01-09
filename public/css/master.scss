@@ -105,6 +105,7 @@ input::-webkit-input-placeholder { color:#FFE8CC }
       text-shadow:0 1px 3px #111;
       height:67px;
       padding:0 12px;
+      display:block;
       a {
         color:#fff; font-weight:normal;
       }
@@ -172,7 +173,7 @@ input::-webkit-input-placeholder { color:#FFE8CC }
       border-radius:20px;
       background:#888;
       color:#fff;
-      font-size:10px;
+      font-size:11px;
     }
     .content {
       margin-left:93px;
@@ -282,6 +283,14 @@ ol.notes {
     color:#fff;
     line-height:16px;
   }
+  
+  #navigation {
+    margin-top:20px;
+    li {
+      margin:10px 0;
+      a { color:#fff; text-shadow:0 1px 1px #111 }
+    }
+  }
 }
 
 .quote {
@@ -302,7 +311,7 @@ ol.notes {
 }
 
 .tags_section {
-  margin-top:20px;
+  margin-top:25px;
   background:url(images/tag.png) no-repeat;
   padding:1px 0 1px 24px;
   a { color:#444 }
