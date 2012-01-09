@@ -164,16 +164,10 @@ input::-webkit-input-placeholder { color:#FFE8CC }
     }
     .note_count {
       display:block;
-      background:#55a1d5;
-      color:#fff;
-      text-align:center;
-      border-radius:20px;
+      width:100%;
+      overflow:hidden;
       margin-top:10px;
-      text-shadow:0 1px 1px #444;
-      box-shadow:0 1px 0 #eaf4ff inset;
-      background:url(images/chat_blue.png) repeat-x bottom left #3da6ff;
-      border:1px solid #0d3a64;
-      padding:2px 0;
+      text-align:center;
     }
     .content {
       margin-left:93px;
