@@ -119,12 +119,13 @@ input::-webkit-input-placeholder {
     padding-bottom: 73px; }
   #entries_column .entry .west {
     float: left;
-    width: 54px; }
+    width: 64px; }
   #entries_column .entry .calendar {
     width: 54px;
     height: 64px;
     padding-top: 4px;
     text-align: center;
+    margin: 0 auto;
     background: url(images/calendar.png) no-repeat; }
     #entries_column .entry .calendar .month {
       color: #fff;
@@ -142,7 +143,12 @@ input::-webkit-input-placeholder {
     width: 100%;
     overflow: hidden;
     margin-top: 10px;
-    text-align: center; }
+    text-align: center;
+    padding: 2px 0;
+    border-radius: 20px;
+    background: #777;
+    color: #fff;
+    font-size: 10px; }
   #entries_column .entry .content {
     margin-left: 93px; }
     #entries_column .entry .content .title {
@@ -161,7 +167,8 @@ input::-webkit-input-placeholder {
 
 .post_type_icon {
   margin-top: 10px;
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
 .conversation {
   overflow: hidden; }

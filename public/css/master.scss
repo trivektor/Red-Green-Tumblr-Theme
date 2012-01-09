@@ -139,13 +139,14 @@ input::-webkit-input-placeholder { color:#FFE8CC }
   .entry {
     .west {
       float:left;
-      width:54px;
+      width:64px;
     }
     .calendar  {
       width:54px;
       height:64px;
       padding-top:4px;
       text-align:center;
+      margin:0 auto;
       background:url(images/calendar.png) no-repeat;
       .month {
         color:#fff;
@@ -168,6 +169,11 @@ input::-webkit-input-placeholder { color:#FFE8CC }
       overflow:hidden;
       margin-top:10px;
       text-align:center;
+      padding:2px 0;
+      border-radius:20px;
+      background:#777;
+      color:#fff;
+      font-size:10px;
     }
     .content {
       margin-left:93px;
@@ -194,6 +200,7 @@ input::-webkit-input-placeholder { color:#FFE8CC }
 .post_type_icon {
   margin-top:10px;
   text-align:center;
+  display:none;
 }
 
 .conversation {
