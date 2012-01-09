@@ -304,7 +304,8 @@ ol.notes {
 .tags_section {
   margin-top:20px;
   background:url(images/tag.png) no-repeat;
-  padding-left:24px
+  padding:1px 0 1px 24px;
+  a { color:#444 }
 }
 
 .AUDIO_info_float {
